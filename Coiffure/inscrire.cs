@@ -15,5 +15,10 @@ namespace Coiffure
         {
             InitializeComponent();
         }
+
+        private void inscrire_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

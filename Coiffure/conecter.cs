@@ -39,15 +39,16 @@ namespace Coiffure
 
         private void conecter_Load(object sender, EventArgs e)
         {
-            //lb_coneceter.BackColor = System.Drawing.Color.Transparent;
+            lb_coneceter.BackColor = System.Drawing.Color.Transparent;
             panel_email.BackColor = System.Drawing.Color.Transparent;
             panel_password.BackColor = System.Drawing.Color.Transparent;
-            panel3.BackColor = System.Drawing.Color.Transparent;
             btn_close.BackColor = System.Drawing.Color.Transparent;
             //btn_conecter.BackColor = System.Drawing.Color.Transparent;
-            //btn_oublier.BackColor = System.Drawing.Color.Transparent;
+            btn_oublier.BackColor = System.Drawing.Color.Transparent;
             txt_email.BackColor = this.BackColor;
             txt_password.BackColor = this.BackColor;
+            lk_incrire.BackColor = System.Drawing.Color.Transparent;
+            lb_compte_non.BackColor = System.Drawing.Color.Transparent;
             //btn_conecter.ForeColor = Color.LightSeaGreen;
         }
 
@@ -57,6 +58,11 @@ namespace Coiffure
         }
 
         private void btn_conecter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

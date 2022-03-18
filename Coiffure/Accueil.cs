@@ -88,7 +88,7 @@ namespace Coiffure
 
         private void Accueil_Load(object sender, EventArgs e)
         {
-
+            //panel_accueil.BackColor = System.Drawing.Color.Transparent;
         }
     }
 }

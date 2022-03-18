@@ -31,17 +31,17 @@ namespace Coiffure
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accueil));
             this.panel_menu = new System.Windows.Forms.Panel();
+            this.panel_salon = new System.Windows.Forms.Panel();
+            this.panel_accueil = new System.Windows.Forms.Panel();
+            this.lb_home = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_aide = new System.Windows.Forms.Button();
             this.btn_propos = new System.Windows.Forms.Button();
             this.btn_inscrir = new System.Windows.Forms.Button();
             this.btn_conecter = new System.Windows.Forms.Button();
             this.btn_reservation = new System.Windows.Forms.Button();
-            this.panel_salon = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel_accueil = new System.Windows.Forms.Panel();
-            this.lb_home = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel_menu.SuspendLayout();
             this.panel_salon.SuspendLayout();
             this.panel_accueil.SuspendLayout();
@@ -60,8 +60,51 @@ namespace Coiffure
             this.panel_menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_menu.Location = new System.Drawing.Point(0, 0);
             this.panel_menu.Name = "panel_menu";
-            this.panel_menu.Size = new System.Drawing.Size(176, 458);
+            this.panel_menu.Size = new System.Drawing.Size(176, 490);
             this.panel_menu.TabIndex = 0;
+            // 
+            // panel_salon
+            // 
+            this.panel_salon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(56)))));
+            this.panel_salon.Controls.Add(this.label2);
+            this.panel_salon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_salon.Location = new System.Drawing.Point(0, 0);
+            this.panel_salon.Name = "panel_salon";
+            this.panel_salon.Size = new System.Drawing.Size(176, 61);
+            this.panel_salon.TabIndex = 0;
+            // 
+            // panel_accueil
+            // 
+            this.panel_accueil.BackColor = System.Drawing.Color.SlateGray;
+            this.panel_accueil.Controls.Add(this.lb_home);
+            this.panel_accueil.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_accueil.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel_accueil.Location = new System.Drawing.Point(176, 0);
+            this.panel_accueil.Name = "panel_accueil";
+            this.panel_accueil.Size = new System.Drawing.Size(716, 61);
+            this.panel_accueil.TabIndex = 1;
+            // 
+            // lb_home
+            // 
+            this.lb_home.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lb_home.AutoSize = true;
+            this.lb_home.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_home.ForeColor = System.Drawing.Color.White;
+            this.lb_home.Location = new System.Drawing.Point(300, 18);
+            this.lb_home.Name = "lb_home";
+            this.lb_home.Size = new System.Drawing.Size(75, 23);
+            this.lb_home.TabIndex = 0;
+            this.lb_home.Text = "Acceuil";
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::Coiffure.Properties.Resources.pexels_nick_demou_1319458;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(176, 61);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(716, 429);
+            this.panel1.TabIndex = 2;
             // 
             // button1
             // 
@@ -192,16 +235,6 @@ namespace Coiffure
             this.btn_reservation.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter);
             this.btn_reservation.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave);
             // 
-            // panel_salon
-            // 
-            this.panel_salon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(56)))));
-            this.panel_salon.Controls.Add(this.label2);
-            this.panel_salon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_salon.Location = new System.Drawing.Point(0, 0);
-            this.panel_salon.Name = "panel_salon";
-            this.panel_salon.Size = new System.Drawing.Size(176, 61);
-            this.panel_salon.TabIndex = 0;
-            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -215,46 +248,13 @@ namespace Coiffure
             this.label2.Text = "Salon de Coiffure";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // panel_accueil
-            // 
-            this.panel_accueil.BackColor = System.Drawing.Color.SlateGray;
-            this.panel_accueil.Controls.Add(this.lb_home);
-            this.panel_accueil.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_accueil.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel_accueil.Location = new System.Drawing.Point(176, 0);
-            this.panel_accueil.Name = "panel_accueil";
-            this.panel_accueil.Size = new System.Drawing.Size(585, 61);
-            this.panel_accueil.TabIndex = 1;
-            // 
-            // lb_home
-            // 
-            this.lb_home.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lb_home.AutoSize = true;
-            this.lb_home.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_home.ForeColor = System.Drawing.Color.White;
-            this.lb_home.Location = new System.Drawing.Point(234, 18);
-            this.lb_home.Name = "lb_home";
-            this.lb_home.Size = new System.Drawing.Size(75, 23);
-            this.lb_home.TabIndex = 0;
-            this.lb_home.Text = "Acceuil";
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::Coiffure.Properties.Resources.pexels_nick_demou_1319459;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(176, 61);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(585, 397);
-            this.panel1.TabIndex = 2;
-            // 
             // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(761, 458);
+            this.ClientSize = new System.Drawing.Size(892, 490);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel_accueil);
             this.Controls.Add(this.panel_menu);

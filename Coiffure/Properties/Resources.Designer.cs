@@ -143,9 +143,39 @@ namespace Coiffure.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pexels_mathias_pr_reding_11213201 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-mathias-pr-reding-11213201", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_nick_demou_1319458 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-nick-demou-1319458", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_nick_demou_1319459 {
             get {
                 object obj = ResourceManager.GetObject("pexels-nick-demou-1319459", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_nick_demou_1319460 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-nick-demou-1319460", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

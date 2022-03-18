@@ -200,5 +200,14 @@
   <ItemGroup>
     <None Include="Resources\pexels-josh-sorenson-995300.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-mathias-pr-reding-11213201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-nick-demou-1319458.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-nick-demou-1319460.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

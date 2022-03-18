@@ -50,6 +50,7 @@ namespace Coiffure
             this.Controls.Add(this.checkBox1);
             this.Name = "propos";
             this.Text = "propos";
+            this.Load += new System.EventHandler(this.propos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

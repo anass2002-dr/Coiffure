@@ -16,5 +16,10 @@ namespace Coiffure
         {
             InitializeComponent();
         }
+
+        private void typecoiffure_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
