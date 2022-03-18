@@ -123,6 +123,16 @@ namespace Coiffure.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap left_arrow_50px {
+            get {
+                object obj = ResourceManager.GetObject("left_arrow_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_cottonbro_3998390 {
             get {
                 object obj = ResourceManager.GetObject("pexels-cottonbro-3998390", resourceCulture);
@@ -176,6 +186,26 @@ namespace Coiffure.Properties {
         internal static System.Drawing.Bitmap pexels_nick_demou_1319460 {
             get {
                 object obj = ResourceManager.GetObject("pexels-nick-demou-1319460", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_nick_demou_13194601 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-nick-demou-13194601", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_nick_demou_1319462 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-nick-demou-1319462", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

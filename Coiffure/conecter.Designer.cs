@@ -150,6 +150,7 @@ namespace Coiffure
             this.lk_incrire.TabIndex = 11;
             this.lk_incrire.TabStop = true;
             this.lk_incrire.Text = "S\'inscrire";
+            this.lk_incrire.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lk_incrire_LinkClicked);
             // 
             // lb_compte_non
             // 

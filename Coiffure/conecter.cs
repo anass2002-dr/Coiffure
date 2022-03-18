@@ -66,5 +66,11 @@ namespace Coiffure
         {
 
         }
+
+        private void lk_incrire_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //Form f;
+            //Program.ShowForm(f = new inscrire(), "S'inscrire", panel1, Program.lb_home);
+        }
     }
 }
