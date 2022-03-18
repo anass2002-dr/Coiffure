@@ -34,7 +34,6 @@ namespace Coiffure
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lb_coneceter = new System.Windows.Forms.Label();
             this.panel_password = new System.Windows.Forms.Panel();
@@ -46,13 +45,16 @@ namespace Coiffure
             this.btn_close = new System.Windows.Forms.Button();
             this.btn_oublier = new System.Windows.Forms.Button();
             this.btn_conecter = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel_password.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel_email.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -114,21 +116,13 @@ namespace Coiffure
             this.label1.TabIndex = 1;
             this.label1.Text = "Bienvenue sur le service";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Coiffure.Properties.Resources.services_50px;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 65);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(153, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
             this.panel3.BackgroundImage = global::Coiffure.Properties.Resources.pexels_josh_sorenson_995300;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Controls.Add(this.linkLabel1);
+            this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.lb_coneceter);
             this.panel3.Controls.Add(this.panel_password);
             this.panel3.Controls.Add(this.panel_email);
@@ -269,6 +263,37 @@ namespace Coiffure
             this.btn_conecter.UseVisualStyleBackColor = false;
             this.btn_conecter.Click += new System.EventHandler(this.btn_conecter_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Coiffure.Properties.Resources.services_50px;
+            this.pictureBox1.Location = new System.Drawing.Point(38, 65);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(153, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(55, 299);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(147, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Vous n\'avez pas un compte? ";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.DarkRed;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Navy;
+            this.linkLabel1.Location = new System.Drawing.Point(208, 299);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(49, 13);
+            this.linkLabel1.TabIndex = 11;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "S\'inscrire";
+            // 
             // conecter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,7 +307,6 @@ namespace Coiffure
             this.Load += new System.EventHandler(this.conecter_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel_password.ResumeLayout(false);
@@ -291,6 +315,7 @@ namespace Coiffure
             this.panel_email.ResumeLayout(false);
             this.panel_email.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -314,5 +339,7 @@ namespace Coiffure
         private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.Label lb_coneceter;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label4;
     }
 }
