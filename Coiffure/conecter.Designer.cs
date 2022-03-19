@@ -34,6 +34,7 @@ namespace Coiffure
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lk_incrire = new System.Windows.Forms.LinkLabel();
             this.lb_compte_non = new System.Windows.Forms.Label();
@@ -47,14 +48,15 @@ namespace Coiffure
             this.btn_close = new System.Windows.Forms.Button();
             this.btn_oublier = new System.Windows.Forms.Button();
             this.btn_conecter = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel_password.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel_email.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -116,19 +118,24 @@ namespace Coiffure
             this.label1.TabIndex = 1;
             this.label1.Text = "Bienvenue sur le service";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Coiffure.Properties.Resources.services_50px;
+            this.pictureBox1.Location = new System.Drawing.Point(38, 65);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(153, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.panel3.BackgroundImage = global::Coiffure.Properties.Resources.pexels_nick_demou_1319460;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.lk_incrire);
-            this.panel3.Controls.Add(this.lb_compte_non);
+            this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.lb_coneceter);
-            this.panel3.Controls.Add(this.panel_password);
-            this.panel3.Controls.Add(this.panel_email);
             this.panel3.Controls.Add(this.btn_close);
-            this.panel3.Controls.Add(this.btn_oublier);
-            this.panel3.Controls.Add(this.btn_conecter);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.ForeColor = System.Drawing.SystemColors.GrayText;
             this.panel3.Location = new System.Drawing.Point(217, 0);
@@ -144,7 +151,7 @@ namespace Coiffure
             this.lk_incrire.AutoSize = true;
             this.lk_incrire.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lk_incrire.LinkColor = System.Drawing.Color.LightSkyBlue;
-            this.lk_incrire.Location = new System.Drawing.Point(273, 314);
+            this.lk_incrire.Location = new System.Drawing.Point(231, 166);
             this.lk_incrire.Name = "lk_incrire";
             this.lk_incrire.Size = new System.Drawing.Size(61, 18);
             this.lk_incrire.TabIndex = 11;
@@ -157,7 +164,7 @@ namespace Coiffure
             this.lb_compte_non.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lb_compte_non.AutoSize = true;
             this.lb_compte_non.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lb_compte_non.Location = new System.Drawing.Point(120, 315);
+            this.lb_compte_non.Location = new System.Drawing.Point(78, 167);
             this.lb_compte_non.Name = "lb_compte_non";
             this.lb_compte_non.Size = new System.Drawing.Size(147, 13);
             this.lb_compte_non.TabIndex = 10;
@@ -182,7 +189,7 @@ namespace Coiffure
             this.panel_password.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel_password.Controls.Add(this.txt_password);
             this.panel_password.Controls.Add(this.pictureBox3);
-            this.panel_password.Location = new System.Drawing.Point(68, 217);
+            this.panel_password.Location = new System.Drawing.Point(26, 69);
             this.panel_password.Name = "panel_password";
             this.panel_password.Size = new System.Drawing.Size(368, 40);
             this.panel_password.TabIndex = 8;
@@ -216,7 +223,7 @@ namespace Coiffure
             this.panel_email.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel_email.Controls.Add(this.pictureBox2);
             this.panel_email.Controls.Add(this.txt_email);
-            this.panel_email.Location = new System.Drawing.Point(65, 171);
+            this.panel_email.Location = new System.Drawing.Point(23, 23);
             this.panel_email.Name = "panel_email";
             this.panel_email.Size = new System.Drawing.Size(368, 40);
             this.panel_email.TabIndex = 7;
@@ -268,7 +275,7 @@ namespace Coiffure
             this.btn_oublier.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btn_oublier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_oublier.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.btn_oublier.Location = new System.Drawing.Point(229, 271);
+            this.btn_oublier.Location = new System.Drawing.Point(187, 123);
             this.btn_oublier.Name = "btn_oublier";
             this.btn_oublier.Size = new System.Drawing.Size(131, 23);
             this.btn_oublier.TabIndex = 6;
@@ -283,7 +290,7 @@ namespace Coiffure
             this.btn_conecter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btn_conecter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btn_conecter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_conecter.Location = new System.Drawing.Point(123, 271);
+            this.btn_conecter.Location = new System.Drawing.Point(81, 123);
             this.btn_conecter.Name = "btn_conecter";
             this.btn_conecter.Size = new System.Drawing.Size(100, 23);
             this.btn_conecter.TabIndex = 5;
@@ -291,15 +298,19 @@ namespace Coiffure
             this.btn_conecter.UseVisualStyleBackColor = false;
             this.btn_conecter.Click += new System.EventHandler(this.btn_conecter_Click);
             // 
-            // pictureBox1
+            // panel2
             // 
-            this.pictureBox1.Image = global::Coiffure.Properties.Resources.services_50px;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 65);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(153, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.Controls.Add(this.lk_incrire);
+            this.panel2.Controls.Add(this.lb_compte_non);
+            this.panel2.Controls.Add(this.panel_password);
+            this.panel2.Controls.Add(this.panel_email);
+            this.panel2.Controls.Add(this.btn_oublier);
+            this.panel2.Controls.Add(this.btn_conecter);
+            this.panel2.Location = new System.Drawing.Point(42, 148);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(415, 197);
+            this.panel2.TabIndex = 12;
             // 
             // conecter
             // 
@@ -314,6 +325,7 @@ namespace Coiffure
             this.Load += new System.EventHandler(this.conecter_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel_password.ResumeLayout(false);
@@ -322,7 +334,8 @@ namespace Coiffure
             this.panel_email.ResumeLayout(false);
             this.panel_email.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -348,5 +361,6 @@ namespace Coiffure
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.LinkLabel lk_incrire;
         private System.Windows.Forms.Label lb_compte_non;
+        private System.Windows.Forms.Panel panel2;
     }
 }

@@ -39,6 +39,7 @@ namespace Coiffure
 
         private void conecter_Load(object sender, EventArgs e)
         {
+            panel3.BackColor = Color.FromArgb(100, 0, 0, 0);
             lb_coneceter.BackColor = System.Drawing.Color.Transparent;
             panel_email.BackColor = System.Drawing.Color.Transparent;
             panel_password.BackColor = System.Drawing.Color.Transparent;
