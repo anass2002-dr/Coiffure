@@ -70,6 +70,12 @@
     <Compile Include="Accueil.Designer.cs">
       <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
+    <Compile Include="Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration.Designer.cs">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </Compile>
     <Compile Include="inscrire.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration.resx">
+      <DependentUpon>Configuration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="inscrire.resx">
       <DependentUpon>inscrire.cs</DependentUpon>
@@ -220,6 +229,78 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\left_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-nick-demou-13194602.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subtract_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_button_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subtract_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subtract_24px_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advertisement_page_24px_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_window_24px_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reserve_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_+_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tune_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barbershop_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-cottonbro-3992870.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\real_estate_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\city_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\language_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invert_colors_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -118,61 +118,133 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="left_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\left_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pexels-josh-sorenson-995300" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pexels-josh-sorenson-995300.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="secure_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\secure_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="left_arrow_32px_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\left_arrow_32px_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="delete_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delete_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="left_arrow_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\left_arrow_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="left_arrow_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\left_arrow_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="services_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\services_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pexels-cottonbro-3992870" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-cottonbro-3992870.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pexels-nick-demou-1319459" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pexels-nick-demou-1319459.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pexels-nick-demou-1319462" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pexels-nick-demou-1319462.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="account_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\account_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pexels-nick-demou-1319458" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pexels-nick-demou-1319458.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pexels-nick-demou-1319460" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pexels-nick-demou-1319460.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pexels-cottonbro-3998390" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pexels-cottonbro-3998390.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pexels-mathias-pr-reding-11213201" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pexels-mathias-pr-reding-11213201.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="city_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\city_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="password_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pexels-nick-demou-1319460" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-nick-demou-1319460.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="subtract_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subtract_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pexels-cottonbro-3998390" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-cottonbro-3998390.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="language_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\language_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pexels-nick-demou-13194602" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-nick-demou-13194602.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pexels-nick-demou-13194601" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pexels-nick-demou-13194601.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="services_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\services_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="secure_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\secure_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barbershop_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barbershop_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="subtract_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subtract_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maximize_button_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maximize_button_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pexels-nick-demou-1319458" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-nick-demou-1319458.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="advertisement_page_24px_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\advertisement_page_24px_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minimize_window_24px_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimize_window_24px_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="subtract_24px_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subtract_24px_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pexels-mathias-pr-reding-11213201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-mathias-pr-reding-11213201.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\left_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="customer_40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\customer_40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="account_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\account_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reserve_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reserve_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tune_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tune_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left_arrow_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\left_arrow_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="about_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pexels-nick-demou-1319462" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-nick-demou-1319462.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left_arrow_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\left_arrow_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_window_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_window_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus_+_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus_+_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pexels-josh-sorenson-995300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-josh-sorenson-995300.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="real_estate_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\real_estate_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="account_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\account_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="left_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\left_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="post_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\post_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="invert_colors_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\invert_colors_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

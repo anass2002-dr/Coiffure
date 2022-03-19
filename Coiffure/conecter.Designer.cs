@@ -34,29 +34,29 @@ namespace Coiffure
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.lk_incrire = new System.Windows.Forms.LinkLabel();
             this.lb_compte_non = new System.Windows.Forms.Label();
-            this.lb_coneceter = new System.Windows.Forms.Label();
             this.panel_password = new System.Windows.Forms.Panel();
             this.txt_password = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel_email = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txt_email = new System.Windows.Forms.TextBox();
-            this.btn_close = new System.Windows.Forms.Button();
             this.btn_oublier = new System.Windows.Forms.Button();
             this.btn_conecter = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.lb_coneceter = new System.Windows.Forms.Label();
+            this.btn_close = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel_password.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel_email.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -118,16 +118,6 @@ namespace Coiffure
             this.label1.TabIndex = 1;
             this.label1.Text = "Bienvenue sur le service";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Coiffure.Properties.Resources.services_50px;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 65);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(153, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -143,6 +133,20 @@ namespace Coiffure
             this.panel3.Size = new System.Drawing.Size(499, 429);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.Controls.Add(this.lk_incrire);
+            this.panel2.Controls.Add(this.lb_compte_non);
+            this.panel2.Controls.Add(this.panel_password);
+            this.panel2.Controls.Add(this.panel_email);
+            this.panel2.Controls.Add(this.btn_oublier);
+            this.panel2.Controls.Add(this.btn_conecter);
+            this.panel2.Location = new System.Drawing.Point(42, 148);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(415, 197);
+            this.panel2.TabIndex = 12;
             // 
             // lk_incrire
             // 
@@ -170,19 +174,6 @@ namespace Coiffure
             this.lb_compte_non.TabIndex = 10;
             this.lb_compte_non.Text = "Vous n\'avez pas un compte? ";
             // 
-            // lb_coneceter
-            // 
-            this.lb_coneceter.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lb_coneceter.AutoSize = true;
-            this.lb_coneceter.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.lb_coneceter.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_coneceter.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.lb_coneceter.Location = new System.Drawing.Point(124, 122);
-            this.lb_coneceter.Name = "lb_coneceter";
-            this.lb_coneceter.Size = new System.Drawing.Size(236, 21);
-            this.lb_coneceter.TabIndex = 9;
-            this.lb_coneceter.Text = "Se Connecter A Votre Compte";
-            // 
             // panel_password
             // 
             this.panel_password.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -207,6 +198,8 @@ namespace Coiffure
             this.txt_password.TabIndex = 5;
             this.txt_password.Text = "Mot de passe";
             this.txt_password.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_password_MouseClick);
+            this.txt_password.Enter += new System.EventHandler(this.txt_email_Enter);
+            this.txt_password.Leave += new System.EventHandler(this.txt_email_Leave);
             // 
             // pictureBox3
             // 
@@ -223,7 +216,7 @@ namespace Coiffure
             this.panel_email.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel_email.Controls.Add(this.pictureBox2);
             this.panel_email.Controls.Add(this.txt_email);
-            this.panel_email.Location = new System.Drawing.Point(23, 23);
+            this.panel_email.Location = new System.Drawing.Point(26, 23);
             this.panel_email.Name = "panel_email";
             this.panel_email.Size = new System.Drawing.Size(368, 40);
             this.panel_email.TabIndex = 7;
@@ -250,21 +243,8 @@ namespace Coiffure
             this.txt_email.TabIndex = 2;
             this.txt_email.Text = "Entrez Votre Email";
             this.txt_email.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_email_MouseClick);
-            // 
-            // btn_close
-            // 
-            this.btn_close.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_close.FlatAppearance.BorderSize = 0;
-            this.btn_close.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
-            this.btn_close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_close.Image = global::Coiffure.Properties.Resources.left_arrow_32px_blue;
-            this.btn_close.Location = new System.Drawing.Point(3, 3);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(67, 23);
-            this.btn_close.TabIndex = 0;
-            this.btn_close.UseVisualStyleBackColor = true;
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            this.txt_email.Enter += new System.EventHandler(this.txt_email_Enter);
+            this.txt_email.Leave += new System.EventHandler(this.txt_email_Leave);
             // 
             // btn_oublier
             // 
@@ -298,19 +278,43 @@ namespace Coiffure
             this.btn_conecter.UseVisualStyleBackColor = false;
             this.btn_conecter.Click += new System.EventHandler(this.btn_conecter_Click);
             // 
-            // panel2
+            // lb_coneceter
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.Controls.Add(this.lk_incrire);
-            this.panel2.Controls.Add(this.lb_compte_non);
-            this.panel2.Controls.Add(this.panel_password);
-            this.panel2.Controls.Add(this.panel_email);
-            this.panel2.Controls.Add(this.btn_oublier);
-            this.panel2.Controls.Add(this.btn_conecter);
-            this.panel2.Location = new System.Drawing.Point(42, 148);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(415, 197);
-            this.panel2.TabIndex = 12;
+            this.lb_coneceter.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lb_coneceter.AutoSize = true;
+            this.lb_coneceter.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.lb_coneceter.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_coneceter.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.lb_coneceter.Location = new System.Drawing.Point(124, 122);
+            this.lb_coneceter.Name = "lb_coneceter";
+            this.lb_coneceter.Size = new System.Drawing.Size(236, 21);
+            this.lb_coneceter.TabIndex = 9;
+            this.lb_coneceter.Text = "Se Connecter A Votre Compte";
+            // 
+            // btn_close
+            // 
+            this.btn_close.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_close.FlatAppearance.BorderSize = 0;
+            this.btn_close.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btn_close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_close.Image = global::Coiffure.Properties.Resources.left_arrow_32px_blue;
+            this.btn_close.Location = new System.Drawing.Point(3, 3);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(67, 23);
+            this.btn_close.TabIndex = 0;
+            this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Coiffure.Properties.Resources.services_50px;
+            this.pictureBox1.Location = new System.Drawing.Point(38, 65);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(153, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // conecter
             // 
@@ -325,17 +329,17 @@ namespace Coiffure
             this.Load += new System.EventHandler(this.conecter_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel_password.ResumeLayout(false);
             this.panel_password.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel_email.ResumeLayout(false);
             this.panel_email.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

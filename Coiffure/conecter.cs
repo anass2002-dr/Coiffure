@@ -19,20 +19,20 @@ namespace Coiffure
 
         private void txt_email_MouseClick(object sender, MouseEventArgs e)
         {
-            if (p == false)
-            {
-                txt_email.Text = "";
-                p = true;
-            }
+            //if (p == false)
+            //{
+            //    txt_email.Text = "";
+            //    p = true;
+            //}
         }
 
         private void txt_password_MouseClick(object sender, MouseEventArgs e)
         {
-            if (txt_password.PasswordChar != '*')
-            {
-                txt_password.Text = "";
-                txt_password.PasswordChar = '*';
-            }
+            //if (txt_password.PasswordChar != '*')
+            //{
+            //    txt_password.Text = "";
+            //    txt_password.PasswordChar = '*';
+            //}
 
             
         }
@@ -72,6 +72,47 @@ namespace Coiffure
         {
             //Form f;
             //Program.ShowForm(f = new inscrire(), "S'inscrire", panel1, Program.lb_home);
+        }
+
+        private void txt_email_Enter(object sender, EventArgs e)
+        {
+            TextBox t = sender as TextBox;
+            if (t == txt_email)
+            {
+                if(txt_email.Text== "Entrez Votre Email")
+                {
+                    txt_email.Text = "";
+                }
+            }
+            else
+            {
+                if (txt_password.Text == "Mot de passe")
+                {
+                    txt_password.Text = "";
+                    txt_password.PasswordChar = '*';
+                }
+            }
+        }
+
+        private void txt_email_Leave(object sender, EventArgs e)
+        {
+            TextBox t = sender as TextBox;
+            if (t == txt_email)
+            {
+                if (txt_email.Text == "")
+                {
+                    txt_email.Text = "Entrez Votre Email";
+                }
+            }
+            else
+            {
+                if (txt_password.Text == "")
+                {
+                    txt_password.Text = "Mot de passe";
+                    txt_password.PasswordChar = '\0';
+
+                }
+            }
         }
     }
 }
