@@ -273,6 +273,16 @@ namespace Coiffure.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pexels_caleb_oquendo_3162022 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-caleb-oquendo-3162022", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_cottonbro_3992870 {
             get {
                 object obj = ResourceManager.GetObject("pexels-cottonbro-3992870", resourceCulture);
@@ -296,6 +306,16 @@ namespace Coiffure.Properties {
         internal static System.Drawing.Bitmap pexels_josh_sorenson_995300 {
             get {
                 object obj = ResourceManager.GetObject("pexels-josh-sorenson-995300", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_josh_sorenson_9953001 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-josh-sorenson-9953001", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

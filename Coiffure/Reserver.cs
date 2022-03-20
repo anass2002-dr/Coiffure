@@ -16,14 +16,26 @@ namespace Coiffure
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void Reserver_Load(object sender, EventArgs e)
         {
+            panel_inside.BackColor = Color.FromArgb(100, 0, 0, 0);
+            lb_salon.BackColor = System.Drawing.Color.Transparent;
+            lb_style.BackColor = System.Drawing.Color.Transparent;
+            lb_temps.BackColor = System.Drawing.Color.Transparent;
+            lb_ville.BackColor = System.Drawing.Color.Transparent;
+            lb_prix_total.BackColor = System.Drawing.Color.Transparent;
+            lb_nom_client.BackColor = System.Drawing.Color.Transparent;
+            lb_nom_coiffure.BackColor = System.Drawing.Color.Transparent;
 
         }
 
-        private void materialButton1_Click(object sender, EventArgs e)
+        private void panel_inside_AutoSizeChanged(object sender, EventArgs e)
         {
-
+            if (WindowState == FormWindowState.Maximized)
+            {
+                //this.Size.Width = 500;
+                //this.Size.Height = 500;
+            }
         }
     }
 }
