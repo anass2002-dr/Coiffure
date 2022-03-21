@@ -70,20 +70,19 @@ namespace Coiffure
         {
             cn = new SqlConnection(chemine);
             cn.Open();
-            SqlCommand com = new SqlCommand("select * from client", cn);
+            SqlCommand com = new SqlCommand("select * from client where email like '"+txt_email.Text+"'", cn);
             SqlDataReader re = com.ExecuteReader();
             while (re.Read())
             {
-                MessageBox.Show(re["password"].ToString());
 
                 exist = true;
             }
             if (exist)
             {
-                //if (re[3] == txt_password.Text)
-                //{
+                if (re["password"].ToString() == txt_password.Text)
+                {
 
-                //}
+                }
             }
             //if (txt_email.Text == ds.Tables["client"].["email"])
             //{
