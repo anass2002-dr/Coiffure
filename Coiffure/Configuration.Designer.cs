@@ -110,7 +110,7 @@ namespace Coiffure
             this.comboBox2.Items.AddRange(new object[] {
             "Sombre",
             "Clair"});
-            this.comboBox2.Location = new System.Drawing.Point(103, 77);
+            this.comboBox2.Location = new System.Drawing.Point(185, 59);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(277, 27);
             this.comboBox2.TabIndex = 13;
