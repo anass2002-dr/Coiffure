@@ -151,7 +151,7 @@ namespace Coiffure
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(31, 19);
+            this.button5.Location = new System.Drawing.Point(37, 14);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(190, 29);
             this.button5.TabIndex = 0;
@@ -164,7 +164,7 @@ namespace Coiffure
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(15, 62);
+            this.button6.Location = new System.Drawing.Point(20, 49);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(230, 27);
             this.button6.TabIndex = 1;
@@ -178,7 +178,7 @@ namespace Coiffure
             this.lb_coneceter.BackColor = System.Drawing.Color.Transparent;
             this.lb_coneceter.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_coneceter.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.lb_coneceter.Location = new System.Drawing.Point(250, 9);
+            this.lb_coneceter.Location = new System.Drawing.Point(283, 12);
             this.lb_coneceter.Name = "lb_coneceter";
             this.lb_coneceter.Size = new System.Drawing.Size(131, 21);
             this.lb_coneceter.TabIndex = 10;
@@ -208,9 +208,9 @@ namespace Coiffure
             // 
             // panel5
             // 
-            this.panel5.Location = new System.Drawing.Point(338, 54);
+            this.panel5.Location = new System.Drawing.Point(322, 48);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(339, 392);
+            this.panel5.Size = new System.Drawing.Size(385, 423);
             this.panel5.TabIndex = 7;
             // 
             // button1
