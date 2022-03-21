@@ -52,6 +52,7 @@ namespace Coiffure
             panel_email.BackColor = System.Drawing.Color.Transparent;
             panel_password.BackColor = System.Drawing.Color.Transparent;
             btn_close.BackColor = System.Drawing.Color.Transparent;
+            btn_eye.BackColor = System.Drawing.Color.Transparent;
             //btn_conecter.BackColor = System.Drawing.Color.Transparent;
             btn_oublier.BackColor = System.Drawing.Color.Transparent;
             txt_email.BackColor = this.BackColor;
@@ -72,22 +73,22 @@ namespace Coiffure
             cn.Open();
             SqlCommand com = new SqlCommand("select * from client where email like '"+txt_email.Text+"'", cn);
             SqlDataReader re = com.ExecuteReader();
+            string pass = "";
             while (re.Read())
             {
-
+                pass = re["password"].ToString();
                 exist = true;
             }
             if (exist)
             {
-                if (re["password"].ToString() == txt_password.Text)
+                if (pass == txt_password.Text)
                 {
-
+                    Program.chenging = "Reserver";
+                    this.Close();
                 }
             }
-            //if (txt_email.Text == ds.Tables["client"].["email"])
-            //{
-
-            //}           
+            cn.Close();
+            re.Close();
 
 
         }
@@ -99,8 +100,8 @@ namespace Coiffure
 
         private void lk_incrire_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //Form f;
-            //Program.ShowForm(f = new inscrire(), "S'inscrire", panel1, Program.lb_home);
+            Program.chenging = "inscrire";
+            this.Close();
         }
 
         private void txt_email_Enter(object sender, EventArgs e)
@@ -141,6 +142,19 @@ namespace Coiffure
                     txt_password.PasswordChar = '\0';
 
                 }
+            }
+        }
+
+        private void btn_eye_Click(object sender, EventArgs e)
+        {
+            if (txt_password.PasswordChar == '*')
+            {
+                txt_password.PasswordChar='\0';
+                //btn_eye.ImageAlign = @"images\icons\invisible.png";
+            }
+            else
+            {
+                txt_password.PasswordChar = '*';
             }
         }
     }

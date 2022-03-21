@@ -34,12 +34,12 @@ namespace Coiffure
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lk_incrire = new System.Windows.Forms.LinkLabel();
             this.lb_compte_non = new System.Windows.Forms.Label();
             this.panel_password = new System.Windows.Forms.Panel();
+            this.btn_eye = new System.Windows.Forms.Button();
             this.txt_password = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel_email = new System.Windows.Forms.Panel();
@@ -49,14 +49,15 @@ namespace Coiffure
             this.btn_conecter = new System.Windows.Forms.Button();
             this.lb_coneceter = new System.Windows.Forms.Label();
             this.btn_close = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel_password.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel_email.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -118,16 +119,6 @@ namespace Coiffure
             this.label1.TabIndex = 1;
             this.label1.Text = "Bienvenue sur le service";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Coiffure.Properties.Resources.services_50px;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 65);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(153, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -188,12 +179,28 @@ namespace Coiffure
             // 
             this.panel_password.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel_password.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel_password.Controls.Add(this.btn_eye);
             this.panel_password.Controls.Add(this.txt_password);
             this.panel_password.Controls.Add(this.pictureBox3);
             this.panel_password.Location = new System.Drawing.Point(26, 69);
             this.panel_password.Name = "panel_password";
             this.panel_password.Size = new System.Drawing.Size(368, 40);
             this.panel_password.TabIndex = 8;
+            // 
+            // btn_eye
+            // 
+            this.btn_eye.BackColor = System.Drawing.Color.Gray;
+            this.btn_eye.FlatAppearance.BorderSize = 0;
+            this.btn_eye.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.btn_eye.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_eye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_eye.Image = global::Coiffure.Properties.Resources.eye_24px_blue;
+            this.btn_eye.Location = new System.Drawing.Point(321, 7);
+            this.btn_eye.Name = "btn_eye";
+            this.btn_eye.Size = new System.Drawing.Size(27, 23);
+            this.btn_eye.TabIndex = 13;
+            this.btn_eye.UseVisualStyleBackColor = false;
+            this.btn_eye.Click += new System.EventHandler(this.btn_eye_Click);
             // 
             // txt_password
             // 
@@ -316,6 +323,16 @@ namespace Coiffure
             this.btn_close.UseVisualStyleBackColor = true;
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Coiffure.Properties.Resources.services_50px;
+            this.pictureBox1.Location = new System.Drawing.Point(38, 65);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(153, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // conecter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,7 +346,6 @@ namespace Coiffure
             this.Load += new System.EventHandler(this.conecter_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -340,6 +356,7 @@ namespace Coiffure
             this.panel_email.ResumeLayout(false);
             this.panel_email.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -366,5 +383,6 @@ namespace Coiffure
         private System.Windows.Forms.LinkLabel lk_incrire;
         private System.Windows.Forms.Label lb_compte_non;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btn_eye;
     }
 }

@@ -121,5 +121,42 @@ namespace Coiffure
             panel_accueil.BackColor = Color.Teal;
             panel_salon.BackColor = Color.FromName("39; 39; 56");
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            Form f = new Reserver();
+            if (Program.chenging == "Reserver")
+            {
+                ShowForm(f = new Reserver(), "Reserver");
+                Program.chenging = "";
+            }
+            else if (Program.chenging == "inscrire")
+            {
+                ShowForm(f = new inscrire(), "S'inscrire");
+                Program.chenging = "";
+            }
+            else if (Program.chenging == "conecter")
+            {
+                ShowForm(f = new conecter(), "Conecter");
+                Program.chenging = "";
+            }
+            else if (Program.chenging == "Configuration")
+            {
+                ShowForm(f = new Configuration(), "Configuration");
+                Program.chenging = "";
+            }
+
+            else if (Program.chenging == "aide")
+            {
+                ShowForm(f = new aide(), "Aide");
+                Program.chenging = "";
+            }
+            else if (Program.chenging == "propos")
+            {
+                ShowForm(f = new propos(), "Propos");
+                Program.chenging = "";
+            }
+
+        }
     }
 }

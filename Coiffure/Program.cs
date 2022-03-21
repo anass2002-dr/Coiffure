@@ -13,7 +13,7 @@ namespace Coiffure
             ,"SeaGreen","DarkSlateGray","LightCoral","Salmon","DodgerBlue","Orange"
 
         };
-        
+        public static string chenging = "";
         //public static Form activeForm = null;
         //public static Label lb_home;
         //public static Panel panel1;

@@ -336,5 +336,11 @@
   <ItemGroup>
     <None Include="Resources\search_more_24px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_24px_blue.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
