@@ -101,6 +101,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>salonDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="aide.resx">
+      <DependentUpon>aide.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="conecter.resx">
       <DependentUpon>conecter.cs</DependentUpon>
     </EmbeddedResource>

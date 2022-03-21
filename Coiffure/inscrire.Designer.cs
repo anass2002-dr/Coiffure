@@ -34,12 +34,13 @@ namespace Coiffure
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.rb_client = new System.Windows.Forms.RadioButton();
             this.rb_coiffeur = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.btn_inscrir = new System.Windows.Forms.Button();
+            this.btn_inscrire = new System.Windows.Forms.Button();
             this.cb_ville = new System.Windows.Forms.ComboBox();
             this.lb_confirmer = new System.Windows.Forms.Label();
             this.lb_ville = new System.Windows.Forms.Label();
@@ -53,11 +54,10 @@ namespace Coiffure
             this.txt_prenom = new System.Windows.Forms.TextBox();
             this.txt_nom = new System.Windows.Forms.TextBox();
             this.btn_left = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -119,6 +119,16 @@ namespace Coiffure
             this.label1.TabIndex = 12;
             this.label1.Text = "Bienvenue sur le service";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Coiffure.Properties.Resources.services_50px;
+            this.pictureBox1.Location = new System.Drawing.Point(45, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(153, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.BackgroundImage = global::Coiffure.Properties.Resources.pexels_nick_demou_1319462;
@@ -134,12 +144,12 @@ namespace Coiffure
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.rb_client);
             this.panel3.Controls.Add(this.rb_coiffeur);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.btn_inscrir);
+            this.panel3.Controls.Add(this.btn_inscrire);
             this.panel3.Controls.Add(this.cb_ville);
             this.panel3.Controls.Add(this.lb_confirmer);
             this.panel3.Controls.Add(this.lb_ville);
@@ -191,23 +201,23 @@ namespace Coiffure
             this.label4.ForeColor = System.Drawing.Color.SpringGreen;
             this.label4.Location = new System.Drawing.Point(13, 81);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 16);
+            this.label4.Size = new System.Drawing.Size(48, 16);
             this.label4.TabIndex = 21;
             this.label4.Text = "type :";
             // 
-            // btn_inscrir
+            // btn_inscrire
             // 
-            this.btn_inscrir.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_inscrir.BackColor = System.Drawing.Color.SpringGreen;
-            this.btn_inscrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_inscrir.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_inscrir.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btn_inscrir.Location = new System.Drawing.Point(16, 273);
-            this.btn_inscrir.Name = "btn_inscrir";
-            this.btn_inscrir.Size = new System.Drawing.Size(151, 23);
-            this.btn_inscrir.TabIndex = 20;
-            this.btn_inscrir.Text = "Inscrire";
-            this.btn_inscrir.UseVisualStyleBackColor = false;
+            this.btn_inscrire.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_inscrire.BackColor = System.Drawing.Color.SpringGreen;
+            this.btn_inscrire.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_inscrire.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_inscrire.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_inscrire.Location = new System.Drawing.Point(16, 273);
+            this.btn_inscrire.Name = "btn_inscrire";
+            this.btn_inscrire.Size = new System.Drawing.Size(151, 23);
+            this.btn_inscrire.TabIndex = 20;
+            this.btn_inscrire.Text = "S\'Inscrire";
+            this.btn_inscrire.UseVisualStyleBackColor = false;
             // 
             // cb_ville
             // 
@@ -236,9 +246,9 @@ namespace Coiffure
             this.lb_confirmer.ForeColor = System.Drawing.Color.SpringGreen;
             this.lb_confirmer.Location = new System.Drawing.Point(13, 234);
             this.lb_confirmer.Name = "lb_confirmer";
-            this.lb_confirmer.Size = new System.Drawing.Size(184, 16);
+            this.lb_confirmer.Size = new System.Drawing.Size(191, 16);
             this.lb_confirmer.TabIndex = 18;
-            this.lb_confirmer.Text = "Confirmer Mot de pass :";
+            this.lb_confirmer.Text = "Confirmer Mot de passe :";
             // 
             // lb_ville
             // 
@@ -248,7 +258,7 @@ namespace Coiffure
             this.lb_ville.ForeColor = System.Drawing.Color.SpringGreen;
             this.lb_ville.Location = new System.Drawing.Point(13, 114);
             this.lb_ville.Name = "lb_ville";
-            this.lb_ville.Size = new System.Drawing.Size(50, 16);
+            this.lb_ville.Size = new System.Drawing.Size(49, 16);
             this.lb_ville.TabIndex = 17;
             this.lb_ville.Text = "ville :";
             // 
@@ -260,9 +270,9 @@ namespace Coiffure
             this.lb_password.ForeColor = System.Drawing.Color.SpringGreen;
             this.lb_password.Location = new System.Drawing.Point(13, 194);
             this.lb_password.Name = "lb_password";
-            this.lb_password.Size = new System.Drawing.Size(105, 16);
+            this.lb_password.Size = new System.Drawing.Size(112, 16);
             this.lb_password.TabIndex = 16;
-            this.lb_password.Text = "Mot de pass :";
+            this.lb_password.Text = "Mot de passe :";
             // 
             // lb_email
             // 
@@ -272,7 +282,7 @@ namespace Coiffure
             this.lb_email.ForeColor = System.Drawing.Color.SpringGreen;
             this.lb_email.Location = new System.Drawing.Point(13, 154);
             this.lb_email.Name = "lb_email";
-            this.lb_email.Size = new System.Drawing.Size(60, 16);
+            this.lb_email.Size = new System.Drawing.Size(59, 16);
             this.lb_email.TabIndex = 15;
             this.lb_email.Text = "Email :";
             // 
@@ -284,9 +294,9 @@ namespace Coiffure
             this.lb_prenom.ForeColor = System.Drawing.Color.SpringGreen;
             this.lb_prenom.Location = new System.Drawing.Point(13, 52);
             this.lb_prenom.Name = "lb_prenom";
-            this.lb_prenom.Size = new System.Drawing.Size(73, 16);
+            this.lb_prenom.Size = new System.Drawing.Size(72, 16);
             this.lb_prenom.TabIndex = 14;
-            this.lb_prenom.Text = "Prenom :";
+            this.lb_prenom.Text = "Prénom :";
             // 
             // lb_nom
             // 
@@ -296,7 +306,7 @@ namespace Coiffure
             this.lb_nom.ForeColor = System.Drawing.Color.SpringGreen;
             this.lb_nom.Location = new System.Drawing.Point(13, 12);
             this.lb_nom.Name = "lb_nom";
-            this.lb_nom.Size = new System.Drawing.Size(53, 16);
+            this.lb_nom.Size = new System.Drawing.Size(52, 16);
             this.lb_nom.TabIndex = 12;
             this.lb_nom.Text = "Nom :";
             // 
@@ -373,16 +383,6 @@ namespace Coiffure
             this.btn_left.UseVisualStyleBackColor = false;
             this.btn_left.Click += new System.EventHandler(this.btn_left_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Coiffure.Properties.Resources.services_50px;
-            this.pictureBox1.Location = new System.Drawing.Point(45, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(153, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // inscrire
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -396,10 +396,10 @@ namespace Coiffure
             this.Load += new System.EventHandler(this.inscrire_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -425,7 +425,7 @@ namespace Coiffure
         private System.Windows.Forms.Label lb_prenom;
         private System.Windows.Forms.Label lb_nom;
         private System.Windows.Forms.ComboBox cb_ville;
-        private System.Windows.Forms.Button btn_inscrir;
+        private System.Windows.Forms.Button btn_inscrire;
         private System.Windows.Forms.Button btn_left;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.RadioButton rb_client;
