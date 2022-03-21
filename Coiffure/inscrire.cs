@@ -33,6 +33,8 @@ namespace Coiffure
             lb_password.BackColor = System.Drawing.Color.Transparent;
             lb_prenom.BackColor = System.Drawing.Color.Transparent;
             lb_ville.BackColor = System.Drawing.Color.Transparent;
+            rb_client.BackColor = System.Drawing.Color.Transparent;
+            rb_coiffeur.BackColor = System.Drawing.Color.Transparent;
 
             //txt_confirmer.BackColor = System.Drawing.Color.Transparent;
             //txt_email.BackColor = System.Drawing.Color.Transparent;

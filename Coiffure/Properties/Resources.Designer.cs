@@ -103,6 +103,26 @@ namespace Coiffure.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap barber_chair_24px {
+            get {
+                object obj = ResourceManager.GetObject("barber_chair_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap barber_scissors_24px {
+            get {
+                object obj = ResourceManager.GetObject("barber_scissors_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap barbershop_24px {
             get {
                 object obj = ResourceManager.GetObject("barbershop_24px", resourceCulture);
@@ -133,6 +153,16 @@ namespace Coiffure.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clock_24px {
+            get {
+                object obj = ResourceManager.GetObject("clock_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap close_window_24px {
             get {
                 object obj = ResourceManager.GetObject("close_window_24px", resourceCulture);
@@ -156,6 +186,26 @@ namespace Coiffure.Properties {
         internal static System.Drawing.Bitmap delete_50px {
             get {
                 object obj = ResourceManager.GetObject("delete_50px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap expensive_price_24px {
+            get {
+                object obj = ResourceManager.GetObject("expensive_price_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hair_clip_24px {
+            get {
+                object obj = ResourceManager.GetObject("hair_clip_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +316,16 @@ namespace Coiffure.Properties {
         internal static System.Drawing.Bitmap password_24px {
             get {
                 object obj = ResourceManager.GetObject("password_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pay_date_24px {
+            get {
+                object obj = ResourceManager.GetObject("pay_date_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,6 +453,16 @@ namespace Coiffure.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pexels_nick_demou_13194621 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-nick-demou-13194621", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap plus___24px {
             get {
                 object obj = ResourceManager.GetObject("plus_+_24px", resourceCulture);
@@ -426,6 +496,26 @@ namespace Coiffure.Properties {
         internal static System.Drawing.Bitmap reserve_24px {
             get {
                 object obj = ResourceManager.GetObject("reserve_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reserve_24px_2 {
+            get {
+                object obj = ResourceManager.GetObject("reserve_24px_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_more_24px {
+            get {
+                object obj = ResourceManager.GetObject("search_more_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

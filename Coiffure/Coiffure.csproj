@@ -299,5 +299,32 @@
   <ItemGroup>
     <None Include="Resources\pexels-josh-sorenson-9953001.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-nick-demou-13194621.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barber_chair_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pay_date_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair_clip_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barber_scissors_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expensive_price_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reserve_24px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_more_24px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

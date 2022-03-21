@@ -26,16 +26,20 @@ namespace Coiffure
             lb_prix_total.BackColor = System.Drawing.Color.Transparent;
             lb_nom_client.BackColor = System.Drawing.Color.Transparent;
             lb_nom_coiffure.BackColor = System.Drawing.Color.Transparent;
+            dateTimePicker1.MinDate = DateTime.Now;
 
         }
 
-        private void panel_inside_AutoSizeChanged(object sender, EventArgs e)
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            if (WindowState == FormWindowState.Maximized)
-            {
-                //this.Size.Width = 500;
-                //this.Size.Height = 500;
-            }
+        }
+
+        private void cb_type_style_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //string chemin = @"C:\Users\bismilah\Desktop\mini_projet\Coiffure\images\2.jpg";
+            //int indix = cb_type_style.SelectedIndex+1;
+            //pictureBox1.Image = Bitmap.FromFile(chemin);
+            //pictureBox1.ImageLocation = @"C:\Users\bismilah\Desktop\mini_projet\Coiffure\images\1.jpg";
         }
     }
 }

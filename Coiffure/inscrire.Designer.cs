@@ -34,9 +34,11 @@ namespace Coiffure
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.rb_client = new System.Windows.Forms.RadioButton();
+            this.rb_coiffeur = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
             this.btn_inscrir = new System.Windows.Forms.Button();
             this.cb_ville = new System.Windows.Forms.ComboBox();
             this.lb_confirmer = new System.Windows.Forms.Label();
@@ -51,13 +53,11 @@ namespace Coiffure
             this.txt_prenom = new System.Windows.Forms.TextBox();
             this.txt_nom = new System.Windows.Forms.TextBox();
             this.btn_left = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -119,16 +119,6 @@ namespace Coiffure
             this.label1.TabIndex = 12;
             this.label1.Text = "Bienvenue sur le service";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Coiffure.Properties.Resources.services_50px;
-            this.pictureBox1.Location = new System.Drawing.Point(45, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(153, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackgroundImage = global::Coiffure.Properties.Resources.pexels_nick_demou_1319462;
@@ -146,8 +136,8 @@ namespace Coiffure
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.radioButton2);
-            this.panel3.Controls.Add(this.radioButton1);
+            this.panel3.Controls.Add(this.rb_client);
+            this.panel3.Controls.Add(this.rb_coiffeur);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.btn_inscrir);
             this.panel3.Controls.Add(this.cb_ville);
@@ -166,6 +156,44 @@ namespace Coiffure
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(437, 333);
             this.panel3.TabIndex = 22;
+            // 
+            // rb_client
+            // 
+            this.rb_client.AutoSize = true;
+            this.rb_client.Font = new System.Drawing.Font("High Tower Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_client.ForeColor = System.Drawing.Color.SpringGreen;
+            this.rb_client.Location = new System.Drawing.Point(310, 81);
+            this.rb_client.Name = "rb_client";
+            this.rb_client.Size = new System.Drawing.Size(57, 19);
+            this.rb_client.TabIndex = 23;
+            this.rb_client.Text = "Client";
+            this.rb_client.UseVisualStyleBackColor = true;
+            // 
+            // rb_coiffeur
+            // 
+            this.rb_coiffeur.AutoSize = true;
+            this.rb_coiffeur.Checked = true;
+            this.rb_coiffeur.Font = new System.Drawing.Font("High Tower Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_coiffeur.ForeColor = System.Drawing.Color.SpringGreen;
+            this.rb_coiffeur.Location = new System.Drawing.Point(219, 80);
+            this.rb_coiffeur.Name = "rb_coiffeur";
+            this.rb_coiffeur.Size = new System.Drawing.Size(72, 19);
+            this.rb_coiffeur.TabIndex = 22;
+            this.rb_coiffeur.TabStop = true;
+            this.rb_coiffeur.Text = "Coiffeur";
+            this.rb_coiffeur.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.SpringGreen;
+            this.label4.Location = new System.Drawing.Point(13, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 16);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "type :";
             // 
             // btn_inscrir
             // 
@@ -345,39 +373,15 @@ namespace Coiffure
             this.btn_left.UseVisualStyleBackColor = false;
             this.btn_left.Click += new System.EventHandler(this.btn_left_Click);
             // 
-            // label4
+            // pictureBox1
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.SpringGreen;
-            this.label4.Location = new System.Drawing.Point(13, 81);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 16);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "type :";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(219, 80);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(61, 17);
-            this.radioButton1.TabIndex = 22;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Coiffeur";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(310, 81);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(51, 17);
-            this.radioButton2.TabIndex = 23;
-            this.radioButton2.Text = "Client";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.pictureBox1.Image = global::Coiffure.Properties.Resources.services_50px;
+            this.pictureBox1.Location = new System.Drawing.Point(45, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(153, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // inscrire
             // 
@@ -392,10 +396,10 @@ namespace Coiffure
             this.Load += new System.EventHandler(this.inscrire_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -424,8 +428,8 @@ namespace Coiffure
         private System.Windows.Forms.Button btn_inscrir;
         private System.Windows.Forms.Button btn_left;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rb_client;
+        private System.Windows.Forms.RadioButton rb_coiffeur;
         private System.Windows.Forms.Label label4;
     }
 }
