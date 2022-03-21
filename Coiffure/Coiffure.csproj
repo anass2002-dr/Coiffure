@@ -96,11 +96,10 @@
     <Compile Include="Reserver.Designer.cs">
       <DependentUpon>Reserver.cs</DependentUpon>
     </Compile>
-    <Compile Include="typecoiffure.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="typecoiffure.Designer.cs">
-      <DependentUpon>typecoiffure.cs</DependentUpon>
+    <Compile Include="salonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>salonDataSet.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="aide.resx">
       <DependentUpon>aide.cs</DependentUpon>
@@ -133,9 +132,6 @@
     <EmbeddedResource Include="Reserver.resx">
       <DependentUpon>Reserver.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="typecoiffure.resx">
-      <DependentUpon>typecoiffure.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -147,6 +143,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="salonDataSet.xsc">
+      <DependentUpon>salonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="salonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>salonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="salonDataSet.xss">
+      <DependentUpon>salonDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\delete_50px.png" />
