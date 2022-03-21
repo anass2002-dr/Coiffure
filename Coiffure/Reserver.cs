@@ -41,5 +41,10 @@ namespace Coiffure
             //pictureBox1.Image = Bitmap.FromFile(chemin);
             //pictureBox1.ImageLocation = @"C:\Users\bismilah\Desktop\mini_projet\Coiffure\images\1.jpg";
         }
+
+        private void btn_reserver_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

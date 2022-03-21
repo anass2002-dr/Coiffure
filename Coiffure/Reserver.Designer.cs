@@ -41,6 +41,7 @@ namespace Coiffure
             this.lb_ville = new System.Windows.Forms.Label();
             this.panel_body = new System.Windows.Forms.Panel();
             this.panel_inside = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_reserver = new System.Windows.Forms.Button();
             this.txt_prix_total = new System.Windows.Forms.TextBox();
             this.txt_temps = new System.Windows.Forms.TextBox();
@@ -62,7 +63,6 @@ namespace Coiffure
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel_header.SuspendLayout();
             this.panel_body.SuspendLayout();
             this.panel_inside.SuspendLayout();
@@ -252,6 +252,15 @@ namespace Coiffure
             this.panel_inside.Size = new System.Drawing.Size(374, 275);
             this.panel_inside.TabIndex = 14;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(138, 239);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // btn_reserver
             // 
             this.btn_reserver.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(154)))));
@@ -261,12 +270,13 @@ namespace Coiffure
             this.btn_reserver.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btn_reserver.Image = global::Coiffure.Properties.Resources.reserve_24px_2;
             this.btn_reserver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_reserver.Location = new System.Drawing.Point(231, 239);
+            this.btn_reserver.Location = new System.Drawing.Point(258, 226);
             this.btn_reserver.Name = "btn_reserver";
             this.btn_reserver.Size = new System.Drawing.Size(126, 23);
             this.btn_reserver.TabIndex = 13;
             this.btn_reserver.Text = "Reserver";
             this.btn_reserver.UseVisualStyleBackColor = false;
+            this.btn_reserver.Click += new System.EventHandler(this.btn_reserver_Click);
             // 
             // txt_prix_total
             // 
@@ -490,15 +500,6 @@ namespace Coiffure
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(138, 239);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Reserver
             // 
