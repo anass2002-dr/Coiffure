@@ -102,6 +102,9 @@
     <Compile Include="typecoiffure.Designer.cs">
       <DependentUpon>typecoiffure.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="aide.resx">
+      <DependentUpon>aide.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="conecter.resx">
       <DependentUpon>conecter.cs</DependentUpon>
     </EmbeddedResource>
