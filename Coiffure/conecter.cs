@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Coiffure
 {
@@ -16,7 +17,12 @@ namespace Coiffure
             InitializeComponent();
         }
         bool p = false;
-
+        SqlConnection cn;
+        SqlDataAdapter da;
+        DataSet ds = new DataSet();
+        BindingSource bs = new BindingSource();
+        bool exist = false;
+        string chemine = @"Data Source=DESKTOP-AD61IOL\SQLEXPRESS;Initial Catalog=salon;User ID=sa;Password=123456";
         private void txt_email_MouseClick(object sender, MouseEventArgs e)
         {
             //if (p == false)
@@ -60,6 +66,28 @@ namespace Coiffure
 
         private void btn_conecter_Click(object sender, EventArgs e)
         {
+            cn = new SqlConnection(chemine);
+            cn.Open();
+            SqlCommand com = new SqlCommand("select * from client", cn);
+            SqlDataReader re = com.ExecuteReader();
+            while (re.Read())
+            {
+                MessageBox.Show(re["password"].ToString());
+
+                exist = true;
+            }
+            if (exist)
+            {
+                //if (re[3] == txt_password.Text)
+                //{
+
+                //}
+            }
+            //if (txt_email.Text == ds.Tables["client"].["email"])
+            //{
+
+            //}           
+
 
         }
 

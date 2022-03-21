@@ -22,5 +22,16 @@ namespace Coiffure.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-AD61IOL\\SQLEXPRESS;Initial Catalog=salon;User ID=sa;Password=" +
+            "123456")]
+        public string salonConnectionString {
+            get {
+                return ((string)(this["salonConnectionString"]));
+            }
+        }
     }
 }
