@@ -270,7 +270,7 @@ namespace Coiffure
             this.btn_reserver.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btn_reserver.Image = global::Coiffure.Properties.Resources.reserve_24px_2;
             this.btn_reserver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_reserver.Location = new System.Drawing.Point(258, 226);
+            this.btn_reserver.Location = new System.Drawing.Point(219, 239);
             this.btn_reserver.Name = "btn_reserver";
             this.btn_reserver.Size = new System.Drawing.Size(126, 23);
             this.btn_reserver.TabIndex = 13;

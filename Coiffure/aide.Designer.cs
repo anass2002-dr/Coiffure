@@ -33,18 +33,18 @@ namespace Coiffure
             this.btnvaliderCompte = new System.Windows.Forms.Button();
             this.btnMotdepasse = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lb_coneceter = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.lb_coneceter = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -86,6 +86,31 @@ namespace Coiffure
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(730, 48);
             this.panel1.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DimGray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(30, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 21);
+            this.button1.TabIndex = 11;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // lb_coneceter
+            // 
+            this.lb_coneceter.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lb_coneceter.AutoSize = true;
+            this.lb_coneceter.BackColor = System.Drawing.Color.Transparent;
+            this.lb_coneceter.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_coneceter.ForeColor = System.Drawing.Color.LightSkyBlue;
+            this.lb_coneceter.Location = new System.Drawing.Point(283, 12);
+            this.lb_coneceter.Name = "lb_coneceter";
+            this.lb_coneceter.Size = new System.Drawing.Size(131, 21);
+            this.lb_coneceter.TabIndex = 10;
+            this.lb_coneceter.Text = "Besoin d\'Aide ?";
             // 
             // panel2
             // 
@@ -135,16 +160,6 @@ namespace Coiffure
             this.button4.Text = "Puis-je supprimer mon Compte ?";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(230, 44);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Déposer un avis sur MaCoiffure";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -171,18 +186,15 @@ namespace Coiffure
             this.button6.Text = "Comment ajouter des photos à mon avis ?";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // lb_coneceter
+            // label2
             // 
-            this.lb_coneceter.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lb_coneceter.AutoSize = true;
-            this.lb_coneceter.BackColor = System.Drawing.Color.Transparent;
-            this.lb_coneceter.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_coneceter.ForeColor = System.Drawing.Color.LightSkyBlue;
-            this.lb_coneceter.Location = new System.Drawing.Point(283, 12);
-            this.lb_coneceter.Name = "lb_coneceter";
-            this.lb_coneceter.Size = new System.Drawing.Size(131, 21);
-            this.lb_coneceter.TabIndex = 10;
-            this.lb_coneceter.Text = "Besoin d\'Aide ?";
+            this.label2.Font = new System.Drawing.Font("Rockwell", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(27, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(230, 44);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Déposer un avis sur MaCoiffure";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
             // 
@@ -212,18 +224,6 @@ namespace Coiffure
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(385, 423);
             this.panel5.TabIndex = 7;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DimGray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(30, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 21);
-            this.button1.TabIndex = 11;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // aide
             // 

@@ -178,6 +178,7 @@ namespace Coiffure
             this.rb_client.TabIndex = 23;
             this.rb_client.Text = "Client";
             this.rb_client.UseVisualStyleBackColor = true;
+            this.rb_client.CheckedChanged += new System.EventHandler(this.rb_client_CheckedChanged);
             // 
             // rb_coiffeur
             // 
@@ -218,6 +219,7 @@ namespace Coiffure
             this.btn_inscrire.TabIndex = 20;
             this.btn_inscrire.Text = "S\'Inscrire";
             this.btn_inscrire.UseVisualStyleBackColor = false;
+            this.btn_inscrire.Click += new System.EventHandler(this.btn_inscrire_Click);
             // 
             // cb_ville
             // 
@@ -228,11 +230,7 @@ namespace Coiffure
             this.cb_ville.ForeColor = System.Drawing.Color.DarkCyan;
             this.cb_ville.FormattingEnabled = true;
             this.cb_ville.Items.AddRange(new object[] {
-            "Tetouane",
-            "Tanger",
-            "Ouazzane",
-            "Rabat",
-            "CasaBlanca"});
+            ""});
             this.cb_ville.Location = new System.Drawing.Point(219, 111);
             this.cb_ville.Name = "cb_ville";
             this.cb_ville.Size = new System.Drawing.Size(199, 24);
@@ -319,6 +317,7 @@ namespace Coiffure
             this.txt_confirmer.Location = new System.Drawing.Point(219, 233);
             this.txt_confirmer.Multiline = true;
             this.txt_confirmer.Name = "txt_confirmer";
+            this.txt_confirmer.PasswordChar = '*';
             this.txt_confirmer.Size = new System.Drawing.Size(199, 23);
             this.txt_confirmer.TabIndex = 11;
             // 
@@ -331,6 +330,7 @@ namespace Coiffure
             this.txt_password.Location = new System.Drawing.Point(219, 192);
             this.txt_password.Multiline = true;
             this.txt_password.Name = "txt_password";
+            this.txt_password.PasswordChar = '*';
             this.txt_password.Size = new System.Drawing.Size(199, 23);
             this.txt_password.TabIndex = 9;
             // 
