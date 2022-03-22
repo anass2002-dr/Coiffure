@@ -150,11 +150,13 @@ namespace Coiffure
             if (txt_password.PasswordChar == '*')
             {
                 txt_password.PasswordChar='\0';
-                //btn_eye.ImageAlign = @"images\icons\invisible.png";
+                btn_eye.Image =Image.FromFile(@"C:\Users\bismilah\Desktop\mini_projet\Coiffure\images\icons\invisible.png");
             }
             else
             {
                 txt_password.PasswordChar = '*';
+                btn_eye.Image = Image.FromFile(@"C:\Users\bismilah\Desktop\mini_projet\Coiffure\images\icons\eye_24px_blue.png");
+
             }
         }
     }

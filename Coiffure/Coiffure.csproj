@@ -82,6 +82,7 @@
     <Compile Include="inscrire.Designer.cs">
       <DependentUpon>inscrire.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mylib.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="propos.cs">
