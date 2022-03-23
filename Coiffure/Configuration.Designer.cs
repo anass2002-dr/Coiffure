@@ -36,6 +36,8 @@ namespace Coiffure
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_annule = new System.Windows.Forms.Button();
@@ -47,10 +49,8 @@ namespace Coiffure
             this.panel3 = new System.Windows.Forms.Panel();
             this.txt_ville = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
-            this.txt_nom_prenom = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.txt_nom_prenom = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -62,6 +62,7 @@ namespace Coiffure
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Controls.Add(this.btn_annule);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.label1);
@@ -147,6 +148,28 @@ namespace Coiffure
             this.panel11.Size = new System.Drawing.Size(450, 2);
             this.panel11.TabIndex = 1;
             // 
+            // label7
+            // 
+            this.label7.Image = global::Coiffure.Properties.Resources.invert_colors_24px;
+            this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label7.Location = new System.Drawing.Point(32, 62);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(102, 21);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Mode :";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.Image = global::Coiffure.Properties.Resources.language_24px;
+            this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label8.Location = new System.Drawing.Point(32, 18);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(121, 30);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Langage :";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -164,7 +187,6 @@ namespace Coiffure
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.Gray;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.btn_annule);
             this.panel2.Controls.Add(this.btn_modefier_sauvgarder);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
@@ -189,7 +211,7 @@ namespace Coiffure
             this.btn_annule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_annule.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_annule.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.btn_annule.Location = new System.Drawing.Point(224, 174);
+            this.btn_annule.Location = new System.Drawing.Point(28, 277);
             this.btn_annule.Name = "btn_annule";
             this.btn_annule.Size = new System.Drawing.Size(72, 27);
             this.btn_annule.TabIndex = 11;
@@ -278,39 +300,6 @@ namespace Coiffure
             this.txt_email.Size = new System.Drawing.Size(277, 25);
             this.txt_email.TabIndex = 3;
             // 
-            // txt_nom_prenom
-            // 
-            this.txt_nom_prenom.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.txt_nom_prenom.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nom_prenom.ForeColor = System.Drawing.Color.Gray;
-            this.txt_nom_prenom.Location = new System.Drawing.Point(185, 23);
-            this.txt_nom_prenom.Multiline = true;
-            this.txt_nom_prenom.Name = "txt_nom_prenom";
-            this.txt_nom_prenom.Size = new System.Drawing.Size(277, 25);
-            this.txt_nom_prenom.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.Image = global::Coiffure.Properties.Resources.invert_colors_24px;
-            this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label7.Location = new System.Drawing.Point(32, 62);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 21);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Mode :";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.Image = global::Coiffure.Properties.Resources.language_24px;
-            this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label8.Location = new System.Drawing.Point(32, 18);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(121, 30);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Langage :";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label5
             // 
             this.label5.Image = global::Coiffure.Properties.Resources.password_24px;
@@ -321,6 +310,17 @@ namespace Coiffure
             this.label5.TabIndex = 6;
             this.label5.Text = "       Mot de passe :";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txt_nom_prenom
+            // 
+            this.txt_nom_prenom.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.txt_nom_prenom.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nom_prenom.ForeColor = System.Drawing.Color.Gray;
+            this.txt_nom_prenom.Location = new System.Drawing.Point(185, 23);
+            this.txt_nom_prenom.Multiline = true;
+            this.txt_nom_prenom.Name = "txt_nom_prenom";
+            this.txt_nom_prenom.Size = new System.Drawing.Size(277, 25);
+            this.txt_nom_prenom.TabIndex = 2;
             // 
             // label6
             // 
