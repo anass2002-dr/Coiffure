@@ -41,7 +41,6 @@ namespace Coiffure
             this.lb_ville = new System.Windows.Forms.Label();
             this.panel_body = new System.Windows.Forms.Panel();
             this.panel_inside = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.btn_reserver = new System.Windows.Forms.Button();
             this.txt_prix_total = new System.Windows.Forms.TextBox();
             this.txt_temps = new System.Windows.Forms.TextBox();
@@ -233,7 +232,6 @@ namespace Coiffure
             // 
             this.panel_inside.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel_inside.BackColor = System.Drawing.Color.Silver;
-            this.panel_inside.Controls.Add(this.button1);
             this.panel_inside.Controls.Add(this.btn_reserver);
             this.panel_inside.Controls.Add(this.txt_prix_total);
             this.panel_inside.Controls.Add(this.txt_temps);
@@ -251,15 +249,6 @@ namespace Coiffure
             this.panel_inside.Name = "panel_inside";
             this.panel_inside.Size = new System.Drawing.Size(374, 275);
             this.panel_inside.TabIndex = 14;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(138, 239);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // btn_reserver
             // 
@@ -557,6 +546,5 @@ namespace Coiffure
         private System.Windows.Forms.Label lb_temps_header;
         private System.Windows.Forms.ComboBox cb_temps;
         private System.Windows.Forms.Panel panel_header;
-        private System.Windows.Forms.Button button1;
     }
 }
