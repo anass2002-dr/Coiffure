@@ -40,6 +40,8 @@
       <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
@@ -58,6 +60,7 @@
     <Compile Include="aide.Designer.cs">
       <DependentUpon>aide.cs</DependentUpon>
     </Compile>
+    <Compile Include="Appsetting.cs" />
     <Compile Include="conecter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +105,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>salonDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Server.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Server.Designer.cs">
+      <DependentUpon>Server.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="aide.resx">
       <DependentUpon>aide.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reserver.resx">
       <DependentUpon>Reserver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server.resx">
+      <DependentUpon>Server.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
@@ -342,6 +354,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\eye_24px_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-panumas-nikhomkhai-1148820 %281%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

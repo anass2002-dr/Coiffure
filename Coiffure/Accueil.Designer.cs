@@ -30,6 +30,7 @@ namespace Coiffure
         private void InitializeComponent()
         {
             this.panel_menu = new System.Windows.Forms.Panel();
+            this.btn_server = new System.Windows.Forms.Button();
             this.btn_Configuration = new System.Windows.Forms.Button();
             this.btn_aide = new System.Windows.Forms.Button();
             this.btn_propos = new System.Windows.Forms.Button();
@@ -52,6 +53,7 @@ namespace Coiffure
             // panel_menu
             // 
             this.panel_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
+            this.panel_menu.Controls.Add(this.btn_server);
             this.panel_menu.Controls.Add(this.btn_Configuration);
             this.panel_menu.Controls.Add(this.btn_aide);
             this.panel_menu.Controls.Add(this.btn_propos);
@@ -64,6 +66,28 @@ namespace Coiffure
             this.panel_menu.Name = "panel_menu";
             this.panel_menu.Size = new System.Drawing.Size(176, 490);
             this.panel_menu.TabIndex = 0;
+            // 
+            // btn_server
+            // 
+            this.btn_server.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_server.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btn_server.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_server.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_server.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_server.Image = global::Coiffure.Properties.Resources.server_24px;
+            this.btn_server.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_server.Location = new System.Drawing.Point(0, 349);
+            this.btn_server.Name = "btn_server";
+            this.btn_server.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_server.Size = new System.Drawing.Size(176, 48);
+            this.btn_server.TabIndex = 7;
+            this.btn_server.Text = "Serveur";
+            this.btn_server.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_server.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_server.UseVisualStyleBackColor = true;
+            this.btn_server.Click += new System.EventHandler(this.btn_reservation_Click);
+            this.btn_server.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter_1);
+            this.btn_server.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave_1);
             // 
             // btn_Configuration
             // 
@@ -84,8 +108,8 @@ namespace Coiffure
             this.btn_Configuration.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Configuration.UseVisualStyleBackColor = true;
             this.btn_Configuration.Click += new System.EventHandler(this.btn_reservation_Click);
-            this.btn_Configuration.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter);
-            this.btn_Configuration.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave);
+            this.btn_Configuration.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter_1);
+            this.btn_Configuration.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave_1);
             // 
             // btn_aide
             // 
@@ -106,8 +130,8 @@ namespace Coiffure
             this.btn_aide.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_aide.UseVisualStyleBackColor = true;
             this.btn_aide.Click += new System.EventHandler(this.btn_reservation_Click);
-            this.btn_aide.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter);
-            this.btn_aide.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave);
+            this.btn_aide.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter_1);
+            this.btn_aide.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave_1);
             // 
             // btn_propos
             // 
@@ -128,8 +152,8 @@ namespace Coiffure
             this.btn_propos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_propos.UseVisualStyleBackColor = true;
             this.btn_propos.Click += new System.EventHandler(this.btn_reservation_Click);
-            this.btn_propos.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter);
-            this.btn_propos.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave);
+            this.btn_propos.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter_1);
+            this.btn_propos.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave_1);
             // 
             // btn_inscrir
             // 
@@ -150,8 +174,8 @@ namespace Coiffure
             this.btn_inscrir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_inscrir.UseVisualStyleBackColor = true;
             this.btn_inscrir.Click += new System.EventHandler(this.btn_reservation_Click);
-            this.btn_inscrir.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter);
-            this.btn_inscrir.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave);
+            this.btn_inscrir.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter_1);
+            this.btn_inscrir.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave_1);
             // 
             // btn_conecter
             // 
@@ -172,8 +196,8 @@ namespace Coiffure
             this.btn_conecter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_conecter.UseVisualStyleBackColor = true;
             this.btn_conecter.Click += new System.EventHandler(this.btn_reservation_Click);
-            this.btn_conecter.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter);
-            this.btn_conecter.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave);
+            this.btn_conecter.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter_1);
+            this.btn_conecter.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave_1);
             // 
             // btn_reservation
             // 
@@ -194,8 +218,8 @@ namespace Coiffure
             this.btn_reservation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_reservation.UseVisualStyleBackColor = true;
             this.btn_reservation.Click += new System.EventHandler(this.btn_reservation_Click);
-            this.btn_reservation.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter);
-            this.btn_reservation.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave);
+            this.btn_reservation.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter_1);
+            this.btn_reservation.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave_1);
             // 
             // panel_salon
             // 
@@ -336,6 +360,7 @@ namespace Coiffure
         private System.Windows.Forms.Button btn_minimiz;
         private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.Button btn_substract;
+        private System.Windows.Forms.Button btn_server;
     }
 }
 

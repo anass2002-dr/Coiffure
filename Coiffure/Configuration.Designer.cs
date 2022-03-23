@@ -30,6 +30,7 @@ namespace Coiffure
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_annule = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -40,7 +41,6 @@ namespace Coiffure
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_annule = new System.Windows.Forms.Button();
             this.btn_modefier_sauvgarder = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -62,7 +62,6 @@ namespace Coiffure
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DimGray;
-            this.panel1.Controls.Add(this.btn_annule);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.label1);
@@ -72,6 +71,21 @@ namespace Coiffure
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(734, 429);
             this.panel1.TabIndex = 1;
+            // 
+            // btn_annule
+            // 
+            this.btn_annule.BackColor = System.Drawing.Color.White;
+            this.btn_annule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_annule.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_annule.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.btn_annule.Location = new System.Drawing.Point(237, 174);
+            this.btn_annule.Name = "btn_annule";
+            this.btn_annule.Size = new System.Drawing.Size(72, 27);
+            this.btn_annule.TabIndex = 11;
+            this.btn_annule.Text = "Annuler";
+            this.btn_annule.UseVisualStyleBackColor = false;
+            this.btn_annule.Visible = false;
+            this.btn_annule.Click += new System.EventHandler(this.btn_annule_Click_1);
             // 
             // label2
             // 
@@ -187,6 +201,7 @@ namespace Coiffure
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.Gray;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.btn_annule);
             this.panel2.Controls.Add(this.btn_modefier_sauvgarder);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
@@ -204,21 +219,6 @@ namespace Coiffure
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(501, 216);
             this.panel2.TabIndex = 6;
-            // 
-            // btn_annule
-            // 
-            this.btn_annule.BackColor = System.Drawing.Color.White;
-            this.btn_annule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_annule.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_annule.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.btn_annule.Location = new System.Drawing.Point(28, 277);
-            this.btn_annule.Name = "btn_annule";
-            this.btn_annule.Size = new System.Drawing.Size(72, 27);
-            this.btn_annule.TabIndex = 11;
-            this.btn_annule.Text = "Annuler";
-            this.btn_annule.UseVisualStyleBackColor = false;
-            this.btn_annule.Visible = false;
-            this.btn_annule.Click += new System.EventHandler(this.btn_annule_Click_1);
             // 
             // btn_modefier_sauvgarder
             // 

@@ -483,6 +483,16 @@ namespace Coiffure.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pexels_panumas_nikhomkhai_1148820__1_ {
+            get {
+                object obj = ResourceManager.GetObject("pexels-panumas-nikhomkhai-1148820 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap plus___24px {
             get {
                 object obj = ResourceManager.GetObject("plus_+_24px", resourceCulture);
@@ -546,6 +556,16 @@ namespace Coiffure.Properties {
         internal static System.Drawing.Bitmap secure_32px {
             get {
                 object obj = ResourceManager.GetObject("secure_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap server_24px {
+            get {
+                object obj = ResourceManager.GetObject("server_24px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

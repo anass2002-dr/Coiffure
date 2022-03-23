@@ -66,60 +66,15 @@ namespace Coiffure
             WindowState = FormWindowState.Minimized;
         }
 
-        private void btn_reservation_Click(object sender, EventArgs e)
-        {
-            int ind = r.Next(Program.cr.Count);
-            Button b = sender as Button;
-            b.BackColor = Color.FromName(Program.cr[ind]);
-            panel_accueil.BackColor = b.BackColor;
-            ind = r.Next(Program.cr.Count);
-
-            panel_salon.BackColor = Color.FromName(Program.cr[ind]);
-            Form f = new Reserver();
-            if (b == btn_reservation)
-            {
-                ShowForm(f = new Reserver(), "Reserver");
-            }
-            if (b == btn_conecter)
-            {
-                ShowForm(f = new conecter(), "Se Connecter");
-            }
-            if (b == btn_inscrir)
-            {
-                ShowForm(f = new inscrire(), "S'inscrire");
-            }
-            if (b == btn_propos)
-            {
-                ShowForm(f = new propos(), "A propos");
-            }
-            if (b == btn_aide)
-            {
-                ShowForm(f = new aide(), "Aide");
-            }
-            if (b == btn_Configuration)
-            {
-                ShowForm(f = new Configuration(), "Configuration");
-            }
-        }
 
         private void btn_reservation_MouseEnter(object sender, EventArgs e)
         {
-            int ind = r.Next(Program.cr.Count);
-            Button b = sender as Button;
-            b.BackColor = Color.FromName(Program.cr[ind]);
-            panel_accueil.BackColor = b.BackColor;
-            ind = r.Next(Program.cr.Count);
-
-            panel_salon.BackColor = Color.FromName(Program.cr[ind]);
+            
         }
 
         private void btn_reservation_MouseLeave(object sender, EventArgs e)
         {
-            Button b = sender as Button;
-
-            b.BackColor = Color.FromName("51; 51; 76");
-            panel_accueil.BackColor = Color.Teal;
-            panel_salon.BackColor = Color.FromName("39; 39; 56");
+           
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -157,6 +112,70 @@ namespace Coiffure
                 Program.chenging = "";
             }
 
+        }
+        public void aa()
+        {
+            
+        }
+
+        private void btn_reservation_Click(object sender, EventArgs e)
+        {
+            int ind = r.Next(Program.cr.Count);
+            Button b = sender as Button;
+            b.BackColor = Color.FromName(Program.cr[ind]);
+            panel_accueil.BackColor = b.BackColor;
+            ind = r.Next(Program.cr.Count);
+
+            panel_salon.BackColor = Color.FromName(Program.cr[ind]);
+            Form f = new Reserver();
+            if (b == btn_reservation)
+            {
+                ShowForm(f = new Reserver(), "Reserver");
+            }
+            if (b == btn_conecter)
+            {
+                ShowForm(f = new conecter(), "Se Connecter");
+            }
+            if (b == btn_inscrir)
+            {
+                ShowForm(f = new inscrire(), "S'inscrire");
+            }
+            if (b == btn_propos)
+            {
+                ShowForm(f = new propos(), "A propos");
+            }
+            if (b == btn_aide)
+            {
+                ShowForm(f = new aide(), "Aide");
+            }
+            if (b == btn_Configuration)
+            {
+                ShowForm(f = new Configuration(), "Configuration");
+            }
+            if (b == btn_server)
+            {
+                ShowForm(f = new Server(), "Server");
+            }
+        }
+
+        private void btn_reservation_MouseLeave_1(object sender, EventArgs e)
+        {
+            Button b = sender as Button;
+
+            b.BackColor = Color.FromName("51; 51; 76");
+            panel_accueil.BackColor = Color.Teal;
+            panel_salon.BackColor = Color.FromName("39; 39; 56");
+        }
+
+        private void btn_reservation_MouseEnter_1(object sender, EventArgs e)
+        {
+            int ind = r.Next(Program.cr.Count);
+            Button b = sender as Button;
+            b.BackColor = Color.FromName(Program.cr[ind]);
+            panel_accueil.BackColor = b.BackColor;
+            ind = r.Next(Program.cr.Count);
+
+            panel_salon.BackColor = Color.FromName(Program.cr[ind]);
         }
     }
 }
