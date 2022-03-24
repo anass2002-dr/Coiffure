@@ -8,12 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using System.IO;
 namespace Coiffure
 {
     public partial class conecter : Form
     {
-        string cs = @"Data Source =DESKTOP-U2EH85I\SQL ;initial catalog=salon ;user id=sa;password=123456";
+        //string cs = @"Data Source =DESKTOP-U2EH85I\SQL ;initial catalog=salon ;user id=sa;password=123456";
         public conecter()
         {
             InitializeComponent();
@@ -23,27 +23,10 @@ namespace Coiffure
         SqlDataAdapter da;
         DataSet ds = new DataSet();
         BindingSource bs = new BindingSource();
+        string chemin = "";
         bool exist = false;
-        string chemine = @"Data Source=DESKTOP-AD61IOL\SQLEXPRESS;Initial Catalog=salon;User ID=sa;Password=123456";
-        private void txt_email_MouseClick(object sender, MouseEventArgs e)
-        {
-            //if (p == false)
-            //{
-            //    txt_email.Text = "";
-            //    p = true;
-            //}
-        }
-
-        private void txt_password_MouseClick(object sender, MouseEventArgs e)
-        {
-            //if (txt_password.PasswordChar != '*')
-            //{
-            //    txt_password.Text = "";
-            //    txt_password.PasswordChar = '*';
-            //}
-
-            
-        }
+        //string chemine = @"Data Source=DESKTOP-AD61IOL\SQLEXPRESS;Initial Catalog=salon;User ID=sa;Password=123456";
+       
 
         private void conecter_Load(object sender, EventArgs e)
         {
@@ -60,6 +43,7 @@ namespace Coiffure
             lk_incrire.BackColor = System.Drawing.Color.Transparent;
             lb_compte_non.BackColor = System.Drawing.Color.Transparent;
             //btn_conecter.ForeColor = Color.LightSeaGreen;
+
         }
 
         private void btn_close_Click(object sender, EventArgs e)
@@ -69,7 +53,10 @@ namespace Coiffure
 
         private void btn_conecter_Click(object sender, EventArgs e)
         {
-            cn = new SqlConnection(chemine);
+            StreamReader red = new StreamReader("Appsetting.txt");
+            chemin = red.ReadToEnd();
+            
+            cn = new SqlConnection(Mylib.DecryptSym(Convert.FromBase64String(chemin),Mylib.cle ,Mylib.iv));
             cn.Open();
             SqlCommand com = new SqlCommand("select * from client where email like '"+txt_email.Text+"'", cn);
             SqlDataReader re = com.ExecuteReader();

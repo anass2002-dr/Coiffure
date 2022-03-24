@@ -214,7 +214,6 @@ namespace Coiffure
             this.txt_password.Size = new System.Drawing.Size(258, 23);
             this.txt_password.TabIndex = 5;
             this.txt_password.Text = "Mot de passe";
-            this.txt_password.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_password_MouseClick);
             this.txt_password.Enter += new System.EventHandler(this.txt_email_Enter);
             this.txt_password.Leave += new System.EventHandler(this.txt_email_Leave);
             // 
@@ -259,7 +258,6 @@ namespace Coiffure
             this.txt_email.Size = new System.Drawing.Size(258, 23);
             this.txt_email.TabIndex = 2;
             this.txt_email.Text = "Entrez Votre Email";
-            this.txt_email.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_email_MouseClick);
             this.txt_email.Enter += new System.EventHandler(this.txt_email_Enter);
             this.txt_email.Leave += new System.EventHandler(this.txt_email_Leave);
             // 

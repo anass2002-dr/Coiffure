@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.IO;
+using Newtonsoft.Json;
+using System.Security.Cryptography;
+using System.CodeDom.Compiler;
 namespace Coiffure
 {
     public partial class Server : Form
@@ -28,9 +32,34 @@ namespace Coiffure
 
         private void btn_connecter_Click(object sender, EventArgs e)
         {
-            SqlConnection cs = new SqlConnection(ConfigurationManager.ConnectionStrings["Coiffure.Properties.Settings.salonConnectionString"].ConnectionString);
-            //Configuration conf = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            string chemin = @"Data Source="+txt_nom_server.Text+";Initial Catalog=salon;User ID="+txt_utilisateur.Text+";Password="+txt_password.Text;
+            SqlConnection cs = new SqlConnection(chemin);
+            try
+            {
+                cs.Open();
+                if (cs.State == ConnectionState.Open)
+                {
+                    chemin = Convert.ToBase64String(Mylib.EncryptSym(chemin, Mylib.cle, Mylib.iv));
+                    Appsetting ap = new Appsetting(chemin);
+                    StreamWriter st = new StreamWriter("Appsetting.txt");
+                    st.WriteLine(chemin);
+                    st.Close();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("les informations est inccorect");
+                }
+                
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "les informations est inccorect");
+            }
+           
             
+            //st.Write(JsonConvert.SerializeObject(ap));
+           
         }
     }
 }

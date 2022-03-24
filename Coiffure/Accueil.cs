@@ -111,6 +111,11 @@ namespace Coiffure
                 ShowForm(f = new propos(), "Propos");
                 Program.chenging = "";
             }
+            else if (Program.chenging == "Gere_les_client")
+            {
+                ShowForm(f = new propos(), "Gere les clients");
+                Program.chenging = "";
+            }
 
         }
         public void aa()

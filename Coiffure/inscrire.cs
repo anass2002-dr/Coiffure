@@ -8,11 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.IO;
 namespace Coiffure
 {
     public partial class inscrire : Form
     {
-        string cs = @"Data Source =DESKTOP-U2EH85I\SQL ;initial catalog=salon ;user id=sa;password=123456";
+        //string cs = @"Data Source =DESKTOP-U2EH85I\SQL ;initial catalog=salon ;user id=sa;password=123456";
         public inscrire()
         {
             
@@ -21,7 +22,7 @@ namespace Coiffure
             // IntPtr CreateRoundRectRgn(int x1, int y1, int x2, int y2,
             //   int cx, int cy);
         }
-
+        string chemin = "";
         private void inscrire_Load(object sender, EventArgs e)
         {
             //panel3.Region = Region.FromHrgn();
@@ -43,8 +44,10 @@ namespace Coiffure
             //txt_password.BackColor = System.Drawing.Color.Transparent;
             //txt_prenom.BackColor = System.Drawing.Color.Transparent;
             //cb_ville.BackColor = System.Drawing.Color.Transparent;
+            StreamReader red = new StreamReader("Appsetting.txt");
+            string chemin = red.ReadToEnd();
 
-            SqlConnection cn = new SqlConnection(cs);
+            SqlConnection cn = new SqlConnection(Mylib.DecryptSym(Convert.FromBase64String(chemin), Mylib.cle, Mylib.iv));
             cn.Open();
             SqlCommand com = new SqlCommand();
             com = new SqlCommand("select * from  client ", cn);
@@ -86,7 +89,10 @@ namespace Coiffure
 
         private void btn_inscrire_Click(object sender, EventArgs e)
         {
-            SqlConnection cn = new SqlConnection(cs);
+            StreamReader red = new StreamReader("Appsetting.txt");
+            chemin = red.ReadToEnd();
+            SqlConnection cn = new SqlConnection(Mylib.DecryptSym(Convert.FromBase64String(chemin), Mylib.cle, Mylib.iv));
+ 
             cn.Open();
             SqlCommand com = new SqlCommand();
        
@@ -105,19 +111,19 @@ namespace Coiffure
             }
              else if (rb_coiffeur.Checked == true)
              {
-                cn.Open();
 
-                SqlCommand c = new SqlCommand("insert into coiffure values ( @nom, @prenom, @email, @password,@ville )", cn);
+                SqlCommand c = new SqlCommand("insert into coiffeur values ( @nom, @prenom, @email, @password,@ville )", cn);
                 c.Parameters.AddWithValue("@nom", txt_nom.Text);
                 c.Parameters.AddWithValue("@prenom", txt_prenom.Text);
                 c.Parameters.AddWithValue("@email", txt_email.Text);
                 c.Parameters.AddWithValue("@password", txt_password.Text);
-                c.Parameters.AddWithValue("@ville", cb_ville.SelectedText);
+                c.Parameters.AddWithValue("@ville", cb_ville.Text);
                 c.ExecuteNonQuery();
-                cn.Close();
 
              }
             ini();
+            cn.Close();
+
             Program.chenging = "conecter";
             this.Close();
 

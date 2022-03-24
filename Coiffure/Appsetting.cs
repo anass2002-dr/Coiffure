@@ -8,13 +8,12 @@ namespace Coiffure
 {
     public class Appsetting
     {
-        Configuration conf;
-        public Appsetting()
+        string conf;
+
+        public Appsetting(string conf)
         {
+            this.conf = conf;
         }
-        public string GetConnectionString(string key)
-        {
-            return "scf";
-        }
+
     }
 }
