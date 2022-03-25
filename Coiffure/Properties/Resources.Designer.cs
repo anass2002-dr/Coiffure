@@ -523,6 +523,16 @@ namespace Coiffure.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap reception_24px {
+            get {
+                object obj = ResourceManager.GetObject("reception_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reserve_24px {
             get {
                 object obj = ResourceManager.GetObject("reserve_24px", resourceCulture);

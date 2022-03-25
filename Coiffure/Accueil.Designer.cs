@@ -30,6 +30,14 @@ namespace Coiffure
         private void InitializeComponent()
         {
             this.panel_menu = new System.Windows.Forms.Panel();
+            this.panel_salon = new System.Windows.Forms.Panel();
+            this.panel_accueil = new System.Windows.Forms.Panel();
+            this.lb_home = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_minimiz = new System.Windows.Forms.Button();
+            this.btn_close = new System.Windows.Forms.Button();
+            this.btn_substract = new System.Windows.Forms.Button();
+            this.btn_gere = new System.Windows.Forms.Button();
             this.btn_server = new System.Windows.Forms.Button();
             this.btn_Configuration = new System.Windows.Forms.Button();
             this.btn_aide = new System.Windows.Forms.Button();
@@ -37,14 +45,7 @@ namespace Coiffure
             this.btn_inscrir = new System.Windows.Forms.Button();
             this.btn_conecter = new System.Windows.Forms.Button();
             this.btn_reservation = new System.Windows.Forms.Button();
-            this.panel_salon = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel_accueil = new System.Windows.Forms.Panel();
-            this.btn_minimiz = new System.Windows.Forms.Button();
-            this.btn_close = new System.Windows.Forms.Button();
-            this.btn_substract = new System.Windows.Forms.Button();
-            this.lb_home = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel_menu.SuspendLayout();
             this.panel_salon.SuspendLayout();
             this.panel_accueil.SuspendLayout();
@@ -53,6 +54,7 @@ namespace Coiffure
             // panel_menu
             // 
             this.panel_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(50)))));
+            this.panel_menu.Controls.Add(this.btn_gere);
             this.panel_menu.Controls.Add(this.btn_server);
             this.panel_menu.Controls.Add(this.btn_Configuration);
             this.panel_menu.Controls.Add(this.btn_aide);
@@ -66,6 +68,116 @@ namespace Coiffure
             this.panel_menu.Name = "panel_menu";
             this.panel_menu.Size = new System.Drawing.Size(176, 490);
             this.panel_menu.TabIndex = 0;
+            // 
+            // panel_salon
+            // 
+            this.panel_salon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(56)))));
+            this.panel_salon.Controls.Add(this.label2);
+            this.panel_salon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_salon.Location = new System.Drawing.Point(0, 0);
+            this.panel_salon.Name = "panel_salon";
+            this.panel_salon.Size = new System.Drawing.Size(176, 61);
+            this.panel_salon.TabIndex = 0;
+            // 
+            // panel_accueil
+            // 
+            this.panel_accueil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panel_accueil.Controls.Add(this.btn_minimiz);
+            this.panel_accueil.Controls.Add(this.btn_close);
+            this.panel_accueil.Controls.Add(this.btn_substract);
+            this.panel_accueil.Controls.Add(this.lb_home);
+            this.panel_accueil.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_accueil.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel_accueil.Location = new System.Drawing.Point(176, 0);
+            this.panel_accueil.Name = "panel_accueil";
+            this.panel_accueil.Size = new System.Drawing.Size(716, 61);
+            this.panel_accueil.TabIndex = 1;
+            // 
+            // lb_home
+            // 
+            this.lb_home.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lb_home.AutoSize = true;
+            this.lb_home.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_home.ForeColor = System.Drawing.Color.White;
+            this.lb_home.Location = new System.Drawing.Point(300, 18);
+            this.lb_home.Name = "lb_home";
+            this.lb_home.Size = new System.Drawing.Size(75, 23);
+            this.lb_home.TabIndex = 0;
+            this.lb_home.Text = "Acceuil";
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::Coiffure.Properties.Resources.pexels_nick_demou_1319458;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(176, 61);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(716, 429);
+            this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btn_minimiz
+            // 
+            this.btn_minimiz.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_minimiz.FlatAppearance.BorderSize = 0;
+            this.btn_minimiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_minimiz.Image = global::Coiffure.Properties.Resources.minimize_window_24px_white;
+            this.btn_minimiz.Location = new System.Drawing.Point(653, 3);
+            this.btn_minimiz.Name = "btn_minimiz";
+            this.btn_minimiz.Size = new System.Drawing.Size(30, 23);
+            this.btn_minimiz.TabIndex = 3;
+            this.btn_minimiz.UseVisualStyleBackColor = true;
+            this.btn_minimiz.Click += new System.EventHandler(this.btn_minimiz_Click);
+            // 
+            // btn_close
+            // 
+            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_close.FlatAppearance.BorderSize = 0;
+            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_close.Image = global::Coiffure.Properties.Resources.close_window_24px;
+            this.btn_close.Location = new System.Drawing.Point(685, 3);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(30, 23);
+            this.btn_close.TabIndex = 2;
+            this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
+            // btn_substract
+            // 
+            this.btn_substract.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_substract.FlatAppearance.BorderSize = 0;
+            this.btn_substract.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_substract.Image = global::Coiffure.Properties.Resources.subtract_24px_white;
+            this.btn_substract.Location = new System.Drawing.Point(621, 3);
+            this.btn_substract.Name = "btn_substract";
+            this.btn_substract.Size = new System.Drawing.Size(30, 21);
+            this.btn_substract.TabIndex = 1;
+            this.btn_substract.UseVisualStyleBackColor = true;
+            this.btn_substract.Click += new System.EventHandler(this.btn_substract_Click);
+            // 
+            // btn_gere
+            // 
+            this.btn_gere.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_gere.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btn_gere.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_gere.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_gere.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_gere.Image = global::Coiffure.Properties.Resources.reception_24px;
+            this.btn_gere.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_gere.Location = new System.Drawing.Point(0, 397);
+            this.btn_gere.Name = "btn_gere";
+            this.btn_gere.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_gere.Size = new System.Drawing.Size(176, 48);
+            this.btn_gere.TabIndex = 8;
+            this.btn_gere.Text = "Gere les client";
+            this.btn_gere.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_gere.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_gere.UseVisualStyleBackColor = true;
+            this.btn_gere.Visible = false;
+            this.btn_gere.Click += new System.EventHandler(this.btn_reservation_Click);
+            this.btn_gere.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter_1);
+            this.btn_gere.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave_1);
             // 
             // btn_server
             // 
@@ -107,6 +219,7 @@ namespace Coiffure
             this.btn_Configuration.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Configuration.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Configuration.UseVisualStyleBackColor = true;
+            this.btn_Configuration.Visible = false;
             this.btn_Configuration.Click += new System.EventHandler(this.btn_reservation_Click);
             this.btn_Configuration.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter_1);
             this.btn_Configuration.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave_1);
@@ -217,19 +330,10 @@ namespace Coiffure
             this.btn_reservation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_reservation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_reservation.UseVisualStyleBackColor = true;
+            this.btn_reservation.Visible = false;
             this.btn_reservation.Click += new System.EventHandler(this.btn_reservation_Click);
             this.btn_reservation.MouseEnter += new System.EventHandler(this.btn_reservation_MouseEnter_1);
             this.btn_reservation.MouseLeave += new System.EventHandler(this.btn_reservation_MouseLeave_1);
-            // 
-            // panel_salon
-            // 
-            this.panel_salon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(56)))));
-            this.panel_salon.Controls.Add(this.label2);
-            this.panel_salon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_salon.Location = new System.Drawing.Point(0, 0);
-            this.panel_salon.Name = "panel_salon";
-            this.panel_salon.Size = new System.Drawing.Size(176, 61);
-            this.panel_salon.TabIndex = 0;
             // 
             // label2
             // 
@@ -243,83 +347,6 @@ namespace Coiffure
             this.label2.TabIndex = 0;
             this.label2.Text = "Salon de Coiffure";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // panel_accueil
-            // 
-            this.panel_accueil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.panel_accueil.Controls.Add(this.btn_minimiz);
-            this.panel_accueil.Controls.Add(this.btn_close);
-            this.panel_accueil.Controls.Add(this.btn_substract);
-            this.panel_accueil.Controls.Add(this.lb_home);
-            this.panel_accueil.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_accueil.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel_accueil.Location = new System.Drawing.Point(176, 0);
-            this.panel_accueil.Name = "panel_accueil";
-            this.panel_accueil.Size = new System.Drawing.Size(716, 61);
-            this.panel_accueil.TabIndex = 1;
-            // 
-            // btn_minimiz
-            // 
-            this.btn_minimiz.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_minimiz.FlatAppearance.BorderSize = 0;
-            this.btn_minimiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_minimiz.Image = global::Coiffure.Properties.Resources.minimize_window_24px_white;
-            this.btn_minimiz.Location = new System.Drawing.Point(653, 3);
-            this.btn_minimiz.Name = "btn_minimiz";
-            this.btn_minimiz.Size = new System.Drawing.Size(30, 23);
-            this.btn_minimiz.TabIndex = 3;
-            this.btn_minimiz.UseVisualStyleBackColor = true;
-            this.btn_minimiz.Click += new System.EventHandler(this.btn_minimiz_Click);
-            // 
-            // btn_close
-            // 
-            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_close.FlatAppearance.BorderSize = 0;
-            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_close.Image = global::Coiffure.Properties.Resources.close_window_24px;
-            this.btn_close.Location = new System.Drawing.Point(685, 3);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(30, 23);
-            this.btn_close.TabIndex = 2;
-            this.btn_close.UseVisualStyleBackColor = true;
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
-            // 
-            // btn_substract
-            // 
-            this.btn_substract.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_substract.FlatAppearance.BorderSize = 0;
-            this.btn_substract.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_substract.Image = global::Coiffure.Properties.Resources.subtract_24px_white;
-            this.btn_substract.Location = new System.Drawing.Point(621, 3);
-            this.btn_substract.Name = "btn_substract";
-            this.btn_substract.Size = new System.Drawing.Size(30, 21);
-            this.btn_substract.TabIndex = 1;
-            this.btn_substract.UseVisualStyleBackColor = true;
-            this.btn_substract.Click += new System.EventHandler(this.btn_substract_Click);
-            // 
-            // lb_home
-            // 
-            this.lb_home.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lb_home.AutoSize = true;
-            this.lb_home.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_home.ForeColor = System.Drawing.Color.White;
-            this.lb_home.Location = new System.Drawing.Point(300, 18);
-            this.lb_home.Name = "lb_home";
-            this.lb_home.Size = new System.Drawing.Size(75, 23);
-            this.lb_home.TabIndex = 0;
-            this.lb_home.Text = "Acceuil";
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::Coiffure.Properties.Resources.pexels_nick_demou_1319458;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(176, 61);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(716, 429);
-            this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Accueil
             // 
@@ -361,6 +388,7 @@ namespace Coiffure
         private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.Button btn_substract;
         private System.Windows.Forms.Button btn_server;
+        private System.Windows.Forms.Button btn_gere;
     }
 }
 

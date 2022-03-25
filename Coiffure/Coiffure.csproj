@@ -373,5 +373,8 @@
   <ItemGroup>
     <None Include="Resources\pexels-panumas-nikhomkhai-1148820 %281%29.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reception_24px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

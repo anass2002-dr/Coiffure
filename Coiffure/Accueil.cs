@@ -67,22 +67,16 @@ namespace Coiffure
         }
 
 
-        private void btn_reservation_MouseEnter(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btn_reservation_MouseLeave(object sender, EventArgs e)
-        {
-           
-        }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            Form f = new Reserver();
+            Form f = new Form();
             if (Program.chenging == "Reserver")
             {
                 ShowForm(f = new Reserver(), "Reserver");
+                btn_reservation.Visible = true;
+                btn_Configuration.Visible = true;
+                btn_inscrir.Visible = false;
+                btn_conecter.Visible = false;
                 Program.chenging = "";
             }
             else if (Program.chenging == "inscrire")
@@ -113,9 +107,14 @@ namespace Coiffure
             }
             else if (Program.chenging == "Gere_les_client")
             {
-                ShowForm(f = new propos(), "Gere les clients");
+                ShowForm(f = new Gere_les_client(), "Gère les clients");
+                btn_conecter.Visible = false;
+                btn_inscrir.Visible = false;
+                btn_gere.Visible = true;
+                btn_Configuration.Visible = true;
                 Program.chenging = "";
             }
+
 
         }
         public void aa()
@@ -160,6 +159,10 @@ namespace Coiffure
             if (b == btn_server)
             {
                 ShowForm(f = new Server(), "Server");
+            }
+            if (b == btn_gere)
+            {
+                ShowForm(f = new Gere_les_client(), "Gère les client");
             }
         }
 

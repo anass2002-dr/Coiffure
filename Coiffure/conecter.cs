@@ -53,29 +53,78 @@ namespace Coiffure
 
         private void btn_conecter_Click(object sender, EventArgs e)
         {
+            remplir();
             StreamReader red = new StreamReader("Appsetting.txt");
             chemin = red.ReadToEnd();
             
             cn = new SqlConnection(Mylib.DecryptSym(Convert.FromBase64String(chemin),Mylib.cle ,Mylib.iv));
-            cn.Open();
-            SqlCommand com = new SqlCommand("select * from client where email like '"+txt_email.Text+"'", cn);
-            SqlDataReader re = com.ExecuteReader();
-            string pass = "";
-            while (re.Read())
+            if (rb_client.Checked)
             {
-                pass = re["password"].ToString();
-                exist = true;
-            }
-            if (exist)
-            {
-                if (pass == txt_password.Text)
+                cn.Open();
+                SqlCommand com = new SqlCommand("select * from client where email like '" + txt_email.Text + "'", cn);
+                SqlDataReader re = com.ExecuteReader();
+                string pass = "";
+                while (re.Read())
                 {
-                    Program.chenging = "Reserver";
-                    this.Close();
+                    pass = re["password"].ToString();
+                    exist = true;
                 }
+                if (exist)
+                {
+                    if (pass == txt_password.Text)
+                    {
+                        Program.chenging = "Reserver";
+                        Program.ClientVisiblity = true;
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Mot de pass est inccorect !");
+                        txt_password.Text = "";
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Email est inccorect !");
+                    txt_email.Text = "";
+                }
+                cn.Close();
+                re.Close();
             }
-            cn.Close();
-            re.Close();
+            else if (rb_coiffeur.Checked)
+            {
+                cn.Open();
+                SqlCommand com = new SqlCommand("select * from coiffeur where email like '" + txt_email.Text + "'", cn);
+                SqlDataReader re = com.ExecuteReader();
+                string pass = "";
+                while (re.Read())
+                {
+                    pass = re["password"].ToString();
+                    exist = true;
+                }
+                if (exist)
+                {
+                    if (pass == txt_password.Text)
+                    {
+                        Program.chenging = "Gere_les_client";
+                        Program.CoiffeurVisiblity = true;
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Mot de pass est inccorect !");
+                        txt_password.Text = "";
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Email est inccorect !");
+                    txt_email.Text = "";
+                }
+                cn.Close();
+                re.Close();
+            }
+
 
 
         }
@@ -84,7 +133,17 @@ namespace Coiffure
         {
 
         }
-
+        public void remplir()
+        {
+            if(txt_email.Text == "Entrez Votre Email")
+            {
+                MessageBox.Show("si vous plait remplire la zone d'email !");
+            }
+            if (txt_password.Text == "Mot de passe")
+            {
+                MessageBox.Show("si vous plait remplire la zone de mot de pass !");
+            }
+        }
         private void lk_incrire_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Program.chenging = "inscrire";

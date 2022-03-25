@@ -14,17 +14,20 @@ namespace Coiffure
 
         };
         public static string chenging = "";
+        public static bool ClientVisiblity = false;
+        public static bool CoiffeurVisiblity = false;
+
         //public static Form activeForm = null;
         //public static Label lb_home;
         //public static Panel panel1;
         //public static Reserver re= new Reserver();
-        
+
         //public static void ShowForm(Form r, string t,Panel panel1,Label lb_home)
         //{
         //    if (activeForm != null)
         //    {
         //        activeForm.Close();
-                
+
         //    }
         //    activeForm = r;
         //    r.TopLevel = false;
