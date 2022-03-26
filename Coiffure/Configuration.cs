@@ -30,7 +30,7 @@ namespace Coiffure
             if (Program.ClientVisiblity)
             {
                 cn.Open();
-                SqlCommand com = new SqlCommand("select * from client where id_client=" + Program.id, cn);
+                SqlCommand com = new SqlCommand("select * from client c inner join ville v on c.id_ville=v.id_ville where id_client=" + Program.id, cn);
                 SqlDataReader re = com.ExecuteReader();
                 DataTable dt = new DataTable();
                 dt.Load(re);
@@ -47,7 +47,7 @@ namespace Coiffure
             else if (Program.CoiffeurVisiblity)
             {
                 cn.Open();
-                SqlCommand com = new SqlCommand("select * from coiffeur where id_coiffeur=" + Program.id, cn);
+                SqlCommand com = new SqlCommand("select * from coiffeur c inner join ville v on c.id_ville=v.id_ville where id_coiffeur =" + Program.id, cn);
                 SqlDataReader re = com.ExecuteReader();
                 DataTable dt = new DataTable();
                 dt.Load(re);

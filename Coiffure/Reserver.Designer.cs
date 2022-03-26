@@ -46,14 +46,14 @@ namespace Coiffure
             this.txt_temps = new System.Windows.Forms.TextBox();
             this.txt_style = new System.Windows.Forms.TextBox();
             this.txt_nom_client = new System.Windows.Forms.TextBox();
-            this.txt_nom_coiffure = new System.Windows.Forms.TextBox();
+            this.txt_nom_coiffeur = new System.Windows.Forms.TextBox();
             this.txt_nom_salon = new System.Windows.Forms.TextBox();
             this.lb_prix_total = new System.Windows.Forms.Label();
             this.lb_temps = new System.Windows.Forms.Label();
             this.lb_style = new System.Windows.Forms.Label();
             this.lb_salon = new System.Windows.Forms.Label();
             this.lb_nom_client = new System.Windows.Forms.Label();
-            this.lb_nom_coiffure = new System.Windows.Forms.Label();
+            this.lb_nom_coiffeur = new System.Windows.Forms.Label();
             this.panel_right = new System.Windows.Forms.Panel();
             this.txt_prix_panel_right = new System.Windows.Forms.TextBox();
             this.txt_nom_style_panel_right = new System.Windows.Forms.TextBox();
@@ -91,7 +91,7 @@ namespace Coiffure
             this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.ScrollBar;
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(587, 32);
+            this.dateTimePicker1.Location = new System.Drawing.Point(587, 35);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(117, 20);
             this.dateTimePicker1.TabIndex = 4;
@@ -176,6 +176,7 @@ namespace Coiffure
             this.btn_rechercher.TabIndex = 6;
             this.btn_rechercher.Text = "Rechercher";
             this.btn_rechercher.UseVisualStyleBackColor = false;
+            this.btn_rechercher.Click += new System.EventHandler(this.btn_rechercher_Click);
             // 
             // lb_salon_header
             // 
@@ -237,14 +238,14 @@ namespace Coiffure
             this.panel_inside.Controls.Add(this.txt_temps);
             this.panel_inside.Controls.Add(this.txt_style);
             this.panel_inside.Controls.Add(this.txt_nom_client);
-            this.panel_inside.Controls.Add(this.txt_nom_coiffure);
+            this.panel_inside.Controls.Add(this.txt_nom_coiffeur);
             this.panel_inside.Controls.Add(this.txt_nom_salon);
             this.panel_inside.Controls.Add(this.lb_prix_total);
             this.panel_inside.Controls.Add(this.lb_temps);
             this.panel_inside.Controls.Add(this.lb_style);
             this.panel_inside.Controls.Add(this.lb_salon);
             this.panel_inside.Controls.Add(this.lb_nom_client);
-            this.panel_inside.Controls.Add(this.lb_nom_coiffure);
+            this.panel_inside.Controls.Add(this.lb_nom_coiffeur);
             this.panel_inside.Location = new System.Drawing.Point(21, 37);
             this.panel_inside.Name = "panel_inside";
             this.panel_inside.Size = new System.Drawing.Size(374, 275);
@@ -303,14 +304,14 @@ namespace Coiffure
             this.txt_nom_client.Size = new System.Drawing.Size(219, 20);
             this.txt_nom_client.TabIndex = 9;
             // 
-            // txt_nom_coiffure
+            // txt_nom_coiffeur
             // 
-            this.txt_nom_coiffure.Enabled = false;
-            this.txt_nom_coiffure.Location = new System.Drawing.Point(138, 45);
-            this.txt_nom_coiffure.Multiline = true;
-            this.txt_nom_coiffure.Name = "txt_nom_coiffure";
-            this.txt_nom_coiffure.Size = new System.Drawing.Size(219, 20);
-            this.txt_nom_coiffure.TabIndex = 8;
+            this.txt_nom_coiffeur.Enabled = false;
+            this.txt_nom_coiffeur.Location = new System.Drawing.Point(138, 45);
+            this.txt_nom_coiffeur.Multiline = true;
+            this.txt_nom_coiffeur.Name = "txt_nom_coiffeur";
+            this.txt_nom_coiffeur.Size = new System.Drawing.Size(219, 20);
+            this.txt_nom_coiffeur.TabIndex = 8;
             // 
             // txt_nom_salon
             // 
@@ -371,15 +372,15 @@ namespace Coiffure
             this.lb_nom_client.TabIndex = 2;
             this.lb_nom_client.Text = "Nom de client :";
             // 
-            // lb_nom_coiffure
+            // lb_nom_coiffeur
             // 
-            this.lb_nom_coiffure.AutoSize = true;
-            this.lb_nom_coiffure.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_nom_coiffure.Location = new System.Drawing.Point(11, 47);
-            this.lb_nom_coiffure.Name = "lb_nom_coiffure";
-            this.lb_nom_coiffure.Size = new System.Drawing.Size(115, 17);
-            this.lb_nom_coiffure.TabIndex = 1;
-            this.lb_nom_coiffure.Text = "Nom de coiffure :";
+            this.lb_nom_coiffeur.AutoSize = true;
+            this.lb_nom_coiffeur.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_nom_coiffeur.Location = new System.Drawing.Point(11, 47);
+            this.lb_nom_coiffeur.Name = "lb_nom_coiffeur";
+            this.lb_nom_coiffeur.Size = new System.Drawing.Size(115, 17);
+            this.lb_nom_coiffeur.TabIndex = 1;
+            this.lb_nom_coiffeur.Text = "Nom de coiffeur :";
             // 
             // panel_right
             // 
@@ -426,11 +427,11 @@ namespace Coiffure
             "3. SIMPLE",
             "4. COUPE AU BOL + DÉGRADÉ BAS",
             "5. BUZZ CUT + CONTOURS",
-            "5. TRESSES ORIGINALES",
-            "6. COUPE CÉSAR + CHEVEUX ONDULÉS",
-            "7. BUZZ CUT + DÉGRADÉ À BLANC + BARBE BLANCHE DÉCONNECTÉE",
-            "8. QUIFF TEXTURÉ + DÉGRADÉ HAUT",
-            "9. SLICKED BACK + DÉGRADÉ HAUT"});
+            "6. TRESSES ORIGINALES",
+            "7. COUPE CÉSAR + CHEVEUX ONDULÉS",
+            "8. BUZZ CUT + DÉGRADÉ À BLANC + BARBE BLANCHE DÉCONNECTÉE",
+            "9. QUIFF TEXTURÉ + DÉGRADÉ HAUT",
+            "10. SLICKED BACK + DÉGRADÉ HAUT"});
             this.cb_type_style.Location = new System.Drawing.Point(13, 37);
             this.cb_type_style.Name = "cb_type_style";
             this.cb_type_style.Size = new System.Drawing.Size(268, 21);
@@ -524,14 +525,14 @@ namespace Coiffure
         private System.Windows.Forms.TextBox txt_temps;
         private System.Windows.Forms.TextBox txt_style;
         private System.Windows.Forms.TextBox txt_nom_client;
-        private System.Windows.Forms.TextBox txt_nom_coiffure;
+        private System.Windows.Forms.TextBox txt_nom_coiffeur;
         private System.Windows.Forms.TextBox txt_nom_salon;
         private System.Windows.Forms.Label lb_prix_total;
         private System.Windows.Forms.Label lb_temps;
         private System.Windows.Forms.Label lb_style;
         private System.Windows.Forms.Label lb_salon;
         private System.Windows.Forms.Label lb_nom_client;
-        private System.Windows.Forms.Label lb_nom_coiffure;
+        private System.Windows.Forms.Label lb_nom_coiffeur;
         private System.Windows.Forms.TextBox txt_prix_panel_right;
         private System.Windows.Forms.TextBox txt_nom_style_panel_right;
         private System.Windows.Forms.Button btn_reserver;
