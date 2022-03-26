@@ -7,7 +7,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using System.IO;
 namespace Coiffure
 {
@@ -20,9 +19,6 @@ namespace Coiffure
         }
         bool p = false;
         SqlConnection cn;
-        SqlDataAdapter da;
-        DataSet ds = new DataSet();
-        BindingSource bs = new BindingSource();
         string chemin = "";
         bool exist = false;
         //string chemine = @"Data Source=DESKTOP-AD61IOL\SQLEXPRESS;Initial Catalog=salon;User ID=sa;Password=123456";
@@ -67,26 +63,29 @@ namespace Coiffure
                 while (re.Read())
                 {
                     pass = re["password"].ToString();
+                    Program.id = Convert.ToInt32(re["id_client"]);
                     exist = true;
                 }
                 if (exist)
                 {
                     if (pass == txt_password.Text)
                     {
+
                         Program.chenging = "Reserver";
                         Program.ClientVisiblity = true;
                         this.Close();
                     }
                     else
                     {
+                        Program.id = 0;
                         MessageBox.Show("Mot de pass est inccorect !");
-                        txt_password.Text = "";
+                        txt_password.Text = "Mot de passe";
                     }
                 }
                 else
                 {
                     MessageBox.Show("Email est inccorect !");
-                    txt_email.Text = "";
+                    txt_email.Text = "Entrez Votre Email";
                 }
                 cn.Close();
                 re.Close();
@@ -100,6 +99,7 @@ namespace Coiffure
                 while (re.Read())
                 {
                     pass = re["password"].ToString();
+                    Program.id = Convert.ToInt32(re["id_coiffeur"]);
                     exist = true;
                 }
                 if (exist)
@@ -112,14 +112,16 @@ namespace Coiffure
                     }
                     else
                     {
+                        Program.id = 0;
                         MessageBox.Show("Mot de pass est inccorect !");
-                        txt_password.Text = "";
+                        txt_password.Text = "Mot de passe";
                     }
                 }
                 else
                 {
                     MessageBox.Show("Email est inccorect !");
-                    txt_email.Text = "";
+                    txt_email.Text = "Entrez Votre Email";
+
                 }
                 cn.Close();
                 re.Close();

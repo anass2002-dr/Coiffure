@@ -16,6 +16,7 @@ namespace Coiffure
         public static string chenging = "";
         public static bool ClientVisiblity = false;
         public static bool CoiffeurVisiblity = false;
+        public static int id = 0;
 
         //public static Form activeForm = null;
         //public static Label lb_home;

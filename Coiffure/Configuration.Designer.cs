@@ -47,13 +47,14 @@ namespace Coiffure
             this.panel3 = new System.Windows.Forms.Panel();
             this.txt_ville = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
-            this.txt_nom_prenom = new System.Windows.Forms.TextBox();
+            this.txt_nom = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.txt_prenom = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -164,6 +165,7 @@ namespace Coiffure
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.Gray;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.txt_prenom);
             this.panel2.Controls.Add(this.btn_annule);
             this.panel2.Controls.Add(this.btn_modefier_sauvgarder);
             this.panel2.Controls.Add(this.panel5);
@@ -174,7 +176,7 @@ namespace Coiffure
             this.panel2.Controls.Add(this.txt_ville);
             this.panel2.Controls.Add(this.txt_email);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.txt_nom_prenom);
+            this.panel2.Controls.Add(this.txt_nom);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
@@ -281,17 +283,17 @@ namespace Coiffure
             this.txt_email.Size = new System.Drawing.Size(277, 25);
             this.txt_email.TabIndex = 3;
             // 
-            // txt_nom_prenom
+            // txt_nom
             // 
-            this.txt_nom_prenom.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.txt_nom_prenom.Enabled = false;
-            this.txt_nom_prenom.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nom_prenom.ForeColor = System.Drawing.Color.Gray;
-            this.txt_nom_prenom.Location = new System.Drawing.Point(185, 23);
-            this.txt_nom_prenom.Multiline = true;
-            this.txt_nom_prenom.Name = "txt_nom_prenom";
-            this.txt_nom_prenom.Size = new System.Drawing.Size(277, 25);
-            this.txt_nom_prenom.TabIndex = 2;
+            this.txt_nom.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.txt_nom.Enabled = false;
+            this.txt_nom.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nom.ForeColor = System.Drawing.Color.Gray;
+            this.txt_nom.Location = new System.Drawing.Point(185, 23);
+            this.txt_nom.Multiline = true;
+            this.txt_nom.Name = "txt_nom";
+            this.txt_nom.Size = new System.Drawing.Size(138, 25);
+            this.txt_nom.TabIndex = 2;
             // 
             // label7
             // 
@@ -359,6 +361,18 @@ namespace Coiffure
             this.label3.Text = " Utilisateur :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // txt_prenom
+            // 
+            this.txt_prenom.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.txt_prenom.Enabled = false;
+            this.txt_prenom.Font = new System.Drawing.Font("Bookman Old Style", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_prenom.ForeColor = System.Drawing.Color.Gray;
+            this.txt_prenom.Location = new System.Drawing.Point(329, 23);
+            this.txt_prenom.Multiline = true;
+            this.txt_prenom.Name = "txt_prenom";
+            this.txt_prenom.Size = new System.Drawing.Size(133, 25);
+            this.txt_prenom.TabIndex = 12;
+            // 
             // Configuration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -401,9 +415,10 @@ namespace Coiffure
         private System.Windows.Forms.TextBox txt_ville;
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt_nom_prenom;
+        private System.Windows.Forms.TextBox txt_nom;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_prenom;
     }
 }
