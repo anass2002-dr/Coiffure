@@ -34,11 +34,6 @@ namespace Coiffure
             this.cb_salon = new System.Windows.Forms.ComboBox();
             this.cb_temps = new System.Windows.Forms.ComboBox();
             this.panel_header = new System.Windows.Forms.Panel();
-            this.lb_temps_header = new System.Windows.Forms.Label();
-            this.btn_rechercher = new System.Windows.Forms.Button();
-            this.lb_salon_header = new System.Windows.Forms.Label();
-            this.lb_date_header = new System.Windows.Forms.Label();
-            this.lb_ville = new System.Windows.Forms.Label();
             this.panel_body = new System.Windows.Forms.Panel();
             this.panel_inside = new System.Windows.Forms.Panel();
             this.btn_reserver = new System.Windows.Forms.Button();
@@ -62,6 +57,11 @@ namespace Coiffure
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lb_temps_header = new System.Windows.Forms.Label();
+            this.btn_rechercher = new System.Windows.Forms.Button();
+            this.lb_salon_header = new System.Windows.Forms.Label();
+            this.lb_date_header = new System.Windows.Forms.Label();
+            this.lb_ville = new System.Windows.Forms.Label();
             this.panel_header.SuspendLayout();
             this.panel_body.SuspendLayout();
             this.panel_inside.SuspendLayout();
@@ -126,73 +126,6 @@ namespace Coiffure
             this.panel_header.Size = new System.Drawing.Size(716, 100);
             this.panel_header.TabIndex = 0;
             // 
-            // lb_temps_header
-            // 
-            this.lb_temps_header.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_temps_header.Image = global::Coiffure.Properties.Resources.clock_24px;
-            this.lb_temps_header.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lb_temps_header.Location = new System.Drawing.Point(6, 61);
-            this.lb_temps_header.Name = "lb_temps_header";
-            this.lb_temps_header.Size = new System.Drawing.Size(77, 21);
-            this.lb_temps_header.TabIndex = 7;
-            this.lb_temps_header.Text = "temps :";
-            this.lb_temps_header.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // btn_rechercher
-            // 
-            this.btn_rechercher.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_rechercher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(219)))), ((int)(((byte)(252)))));
-            this.btn_rechercher.FlatAppearance.BorderSize = 0;
-            this.btn_rechercher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_rechercher.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btn_rechercher.Image = global::Coiffure.Properties.Resources.search_more_24px;
-            this.btn_rechercher.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_rechercher.Location = new System.Drawing.Point(570, 61);
-            this.btn_rechercher.Name = "btn_rechercher";
-            this.btn_rechercher.Size = new System.Drawing.Size(134, 23);
-            this.btn_rechercher.TabIndex = 6;
-            this.btn_rechercher.Text = "Rechercher";
-            this.btn_rechercher.UseVisualStyleBackColor = false;
-            this.btn_rechercher.Click += new System.EventHandler(this.btn_rechercher_Click);
-            // 
-            // lb_salon_header
-            // 
-            this.lb_salon_header.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lb_salon_header.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_salon_header.Image = global::Coiffure.Properties.Resources.barber_chair_24px;
-            this.lb_salon_header.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lb_salon_header.Location = new System.Drawing.Point(212, 29);
-            this.lb_salon_header.Name = "lb_salon_header";
-            this.lb_salon_header.Size = new System.Drawing.Size(137, 29);
-            this.lb_salon_header.TabIndex = 2;
-            this.lb_salon_header.Text = "Salon de coiffure :";
-            this.lb_salon_header.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lb_date_header
-            // 
-            this.lb_date_header.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lb_date_header.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_date_header.Image = global::Coiffure.Properties.Resources.pay_date_24px;
-            this.lb_date_header.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lb_date_header.Location = new System.Drawing.Point(502, 33);
-            this.lb_date_header.Name = "lb_date_header";
-            this.lb_date_header.Size = new System.Drawing.Size(79, 25);
-            this.lb_date_header.TabIndex = 1;
-            this.lb_date_header.Text = "La date :";
-            this.lb_date_header.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lb_ville
-            // 
-            this.lb_ville.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_ville.Image = global::Coiffure.Properties.Resources.city_24px;
-            this.lb_ville.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lb_ville.Location = new System.Drawing.Point(3, 25);
-            this.lb_ville.Name = "lb_ville";
-            this.lb_ville.Size = new System.Drawing.Size(71, 30);
-            this.lb_ville.TabIndex = 0;
-            this.lb_ville.Text = "Ville :";
-            this.lb_ville.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // panel_body
             // 
             this.panel_body.BackColor = System.Drawing.Color.White;
@@ -237,12 +170,13 @@ namespace Coiffure
             this.btn_reserver.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btn_reserver.Image = global::Coiffure.Properties.Resources.reserve_24px_2;
             this.btn_reserver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_reserver.Location = new System.Drawing.Point(219, 239);
+            this.btn_reserver.Location = new System.Drawing.Point(231, 226);
             this.btn_reserver.Name = "btn_reserver";
             this.btn_reserver.Size = new System.Drawing.Size(126, 23);
             this.btn_reserver.TabIndex = 13;
             this.btn_reserver.Text = "Reserver";
             this.btn_reserver.UseVisualStyleBackColor = false;
+            this.btn_reserver.Visible = false;
             this.btn_reserver.Click += new System.EventHandler(this.btn_reserver_Click);
             // 
             // txt_prix_total
@@ -449,13 +383,80 @@ namespace Coiffure
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.pictureBox1.Image = global::Coiffure.Properties.Resources.pexels_nick_demou_13194621;
+            this.pictureBox1.Image = global::Coiffure.Properties.Resources._5;
             this.pictureBox1.Location = new System.Drawing.Point(13, 64);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(268, 152);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // lb_temps_header
+            // 
+            this.lb_temps_header.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_temps_header.Image = global::Coiffure.Properties.Resources.clock_24px;
+            this.lb_temps_header.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lb_temps_header.Location = new System.Drawing.Point(6, 61);
+            this.lb_temps_header.Name = "lb_temps_header";
+            this.lb_temps_header.Size = new System.Drawing.Size(77, 21);
+            this.lb_temps_header.TabIndex = 7;
+            this.lb_temps_header.Text = "temps :";
+            this.lb_temps_header.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btn_rechercher
+            // 
+            this.btn_rechercher.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_rechercher.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(219)))), ((int)(((byte)(252)))));
+            this.btn_rechercher.FlatAppearance.BorderSize = 0;
+            this.btn_rechercher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_rechercher.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_rechercher.Image = global::Coiffure.Properties.Resources.search_more_24px;
+            this.btn_rechercher.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_rechercher.Location = new System.Drawing.Point(570, 61);
+            this.btn_rechercher.Name = "btn_rechercher";
+            this.btn_rechercher.Size = new System.Drawing.Size(134, 23);
+            this.btn_rechercher.TabIndex = 6;
+            this.btn_rechercher.Text = "Rechercher";
+            this.btn_rechercher.UseVisualStyleBackColor = false;
+            this.btn_rechercher.Click += new System.EventHandler(this.btn_rechercher_Click);
+            // 
+            // lb_salon_header
+            // 
+            this.lb_salon_header.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lb_salon_header.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_salon_header.Image = global::Coiffure.Properties.Resources.barber_chair_24px;
+            this.lb_salon_header.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lb_salon_header.Location = new System.Drawing.Point(212, 29);
+            this.lb_salon_header.Name = "lb_salon_header";
+            this.lb_salon_header.Size = new System.Drawing.Size(137, 29);
+            this.lb_salon_header.TabIndex = 2;
+            this.lb_salon_header.Text = "Salon de coiffure :";
+            this.lb_salon_header.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lb_date_header
+            // 
+            this.lb_date_header.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lb_date_header.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_date_header.Image = global::Coiffure.Properties.Resources.pay_date_24px;
+            this.lb_date_header.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lb_date_header.Location = new System.Drawing.Point(502, 33);
+            this.lb_date_header.Name = "lb_date_header";
+            this.lb_date_header.Size = new System.Drawing.Size(79, 25);
+            this.lb_date_header.TabIndex = 1;
+            this.lb_date_header.Text = "La date :";
+            this.lb_date_header.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lb_ville
+            // 
+            this.lb_ville.Font = new System.Drawing.Font("Microsoft JhengHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ville.Image = global::Coiffure.Properties.Resources.city_24px;
+            this.lb_ville.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lb_ville.Location = new System.Drawing.Point(3, 25);
+            this.lb_ville.Name = "lb_ville";
+            this.lb_ville.Size = new System.Drawing.Size(71, 30);
+            this.lb_ville.TabIndex = 0;
+            this.lb_ville.Text = "Ville :";
+            this.lb_ville.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Reserver
             // 

@@ -22,7 +22,7 @@ namespace Coiffure
         DataTable dt2 = new DataTable();
         DataTable dt3 = new DataTable();
         DataTable dt4 = new DataTable();
-
+        DataTable dt5 = new DataTable();
         private void Reserver_Load(object sender, EventArgs e)
         {
             panel_inside.BackColor = Color.FromArgb(100, 0, 0, 0);
@@ -80,7 +80,7 @@ namespace Coiffure
             cb_type_style.DisplayMember = "nom_style";
             cb_type_style.ValueMember = "id_style";
             cb_type_style.DataSource = dt3;
-
+            
             txt_nom_style_panel_right.DataBindings.Add("Text", dt3, "nom_style");
             txt_prix_panel_right.DataBindings.Add("Text", dt3, "prix");
 
@@ -89,18 +89,18 @@ namespace Coiffure
             cn.Close();
             re3.Close();
             //calendrier
-            cn.Open();
-            SqlCommand com4 = new SqlCommand("select * from calendrier", cn);
-            SqlDataReader re4 = com4.ExecuteReader();
-            dt4.Load(re4);
-            cb_temps.DisplayMember = "temps";
-            cb_temps.ValueMember = "id_temps";
-            cb_temps.DataSource = dt4;
+            //cn.Open();
+            //SqlCommand com4 = new SqlCommand("select * from calendrier", cn);
+            //SqlDataReader re4 = com4.ExecuteReader();
+            //dt4.Load(re4);
+            //cb_temps.DisplayMember = "temps";
+            //cb_temps.ValueMember = "id_temps";
+            //cb_temps.DataSource = dt4;
 
-            txt_temps.DataBindings.Add("Text", dt4, "temps");
+            //txt_temps.DataBindings.Add("Text", dt4, "temps");
 
-            cn.Close();
-            re4.Close();
+            //cn.Close();
+            //re4.Close();
 
         }
 
@@ -117,17 +117,70 @@ namespace Coiffure
             //pictureBox1.Image = Bitmap.FromFile(chemin);
             //int indix = cb_type_style.SelectedIndex + 1;
             //pictureBox1.Image = Bitmap.FromFile(chemin);
-            //pictureBox1.ImageLocation = @"C:\Users\bismilah\Desktop\mini_projet\coiffure\images\3.jpg";
+            int ind = cb_type_style.SelectedIndex;
+            switch (ind)
+            {
+                case 0:
+                    pictureBox1.Image = Properties.Resources._1;
+                    break;
+                case 1:
+                    pictureBox1.Image = Properties.Resources._2;
+
+                    break;
+                case 2:
+                    pictureBox1.Image = Properties.Resources._3;
+                    break;
+                case 3:
+                    pictureBox1.Image = Properties.Resources._4;
+
+                    break;
+                case 4:
+                    pictureBox1.Image = Properties.Resources._5;
+                    break;
+            }
         }
 
         private void btn_reserver_Click(object sender, EventArgs e)
         {
-            
+            //StreamReader red = new StreamReader("Appsetting.txt");
+            //chemin = red.ReadToEnd();
+
+            //cn = new SqlConnection(Mylib.DecryptSym(Convert.FromBase64String(chemin), Mylib.cle, Mylib.iv));
+            ////client
+            //cn.Open();
+
+            //cn.Close();
+            //cn.Open();
+            //SqlCommand com = new SqlCommand("insert into reservation values(@id_client,@id_coiffeur,@id_coiffure,@id_style,@id_temps,@_date", cn);
+            //com.Parameters.AddWithValue("@id_client",Program.id);
+            //com.Parameters.AddWithValue("@id_coiffeur",);
+            //com.Parameters.AddWithValue("@id_coiffure",);
+            //com.Parameters.AddWithValue("@id_style",);
+            //com.Parameters.AddWithValue("@id_temps",);
+            //com.Parameters.AddWithValue("@_date",);
+
         }
 
         private void btn_rechercher_Click(object sender, EventArgs e)
         {
+            StreamReader red = new StreamReader("Appsetting.txt");
+            chemin = red.ReadToEnd();
 
+            cn = new SqlConnection(Mylib.DecryptSym(Convert.FromBase64String(chemin), Mylib.cle, Mylib.iv));
+            //client
+            cn.Open();
+            SqlCommand com = new SqlCommand("select * from calendrier where id_temps not in (select id_temps from reservation where _date like '" + dateTimePicker1.Value+"')", cn);
+            SqlDataReader re = com.ExecuteReader();
+            dt5.Load(re);
+
+            cb_temps.DisplayMember = "temps";
+            cb_temps.ValueMember = "id_temps";
+            cb_temps.DataSource = dt5;
+            txt_temps.DataBindings.Add("Text", dt5, "temps");
+
+            cn.Close();
+            re.Close();
+            btn_reserver.Visible = true;
         }
     }
 }
