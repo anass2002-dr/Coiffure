@@ -140,6 +140,7 @@ namespace Coiffure
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(466, 390);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel3
             // 
@@ -202,7 +203,7 @@ namespace Coiffure
             this.label4.ForeColor = System.Drawing.Color.SpringGreen;
             this.label4.Location = new System.Drawing.Point(13, 81);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 16);
+            this.label4.Size = new System.Drawing.Size(49, 16);
             this.label4.TabIndex = 21;
             this.label4.Text = "type :";
             // 
@@ -235,6 +236,7 @@ namespace Coiffure
             this.cb_ville.Name = "cb_ville";
             this.cb_ville.Size = new System.Drawing.Size(199, 24);
             this.cb_ville.TabIndex = 19;
+            this.cb_ville.SelectedIndexChanged += new System.EventHandler(this.cb_ville_SelectedIndexChanged);
             // 
             // lb_confirmer
             // 
@@ -244,7 +246,7 @@ namespace Coiffure
             this.lb_confirmer.ForeColor = System.Drawing.Color.SpringGreen;
             this.lb_confirmer.Location = new System.Drawing.Point(13, 234);
             this.lb_confirmer.Name = "lb_confirmer";
-            this.lb_confirmer.Size = new System.Drawing.Size(191, 16);
+            this.lb_confirmer.Size = new System.Drawing.Size(192, 16);
             this.lb_confirmer.TabIndex = 18;
             this.lb_confirmer.Text = "Confirmer Mot de passe :";
             // 
@@ -256,7 +258,7 @@ namespace Coiffure
             this.lb_ville.ForeColor = System.Drawing.Color.SpringGreen;
             this.lb_ville.Location = new System.Drawing.Point(13, 114);
             this.lb_ville.Name = "lb_ville";
-            this.lb_ville.Size = new System.Drawing.Size(49, 16);
+            this.lb_ville.Size = new System.Drawing.Size(50, 16);
             this.lb_ville.TabIndex = 17;
             this.lb_ville.Text = "ville :";
             // 
@@ -268,7 +270,7 @@ namespace Coiffure
             this.lb_password.ForeColor = System.Drawing.Color.SpringGreen;
             this.lb_password.Location = new System.Drawing.Point(13, 194);
             this.lb_password.Name = "lb_password";
-            this.lb_password.Size = new System.Drawing.Size(112, 16);
+            this.lb_password.Size = new System.Drawing.Size(113, 16);
             this.lb_password.TabIndex = 16;
             this.lb_password.Text = "Mot de passe :";
             // 
@@ -280,7 +282,7 @@ namespace Coiffure
             this.lb_email.ForeColor = System.Drawing.Color.SpringGreen;
             this.lb_email.Location = new System.Drawing.Point(13, 154);
             this.lb_email.Name = "lb_email";
-            this.lb_email.Size = new System.Drawing.Size(59, 16);
+            this.lb_email.Size = new System.Drawing.Size(60, 16);
             this.lb_email.TabIndex = 15;
             this.lb_email.Text = "Email :";
             // 
@@ -292,7 +294,7 @@ namespace Coiffure
             this.lb_prenom.ForeColor = System.Drawing.Color.SpringGreen;
             this.lb_prenom.Location = new System.Drawing.Point(13, 52);
             this.lb_prenom.Name = "lb_prenom";
-            this.lb_prenom.Size = new System.Drawing.Size(72, 16);
+            this.lb_prenom.Size = new System.Drawing.Size(73, 16);
             this.lb_prenom.TabIndex = 14;
             this.lb_prenom.Text = "Prénom :";
             // 
@@ -304,7 +306,7 @@ namespace Coiffure
             this.lb_nom.ForeColor = System.Drawing.Color.SpringGreen;
             this.lb_nom.Location = new System.Drawing.Point(13, 12);
             this.lb_nom.Name = "lb_nom";
-            this.lb_nom.Size = new System.Drawing.Size(52, 16);
+            this.lb_nom.Size = new System.Drawing.Size(53, 16);
             this.lb_nom.TabIndex = 12;
             this.lb_nom.Text = "Nom :";
             // 

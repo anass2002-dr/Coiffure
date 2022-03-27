@@ -50,7 +50,7 @@ namespace Coiffure
             SqlConnection cn = new SqlConnection(Mylib.DecryptSym(Convert.FromBase64String(chemin), Mylib.cle, Mylib.iv));
             cn.Open();
             SqlCommand com = new SqlCommand();
-            com = new SqlCommand("select * from  client ", cn);
+            com = new SqlCommand("select * from  client c inner join ville v on c.id_ville =v.id_ville ", cn);
             SqlDataReader dr = com.ExecuteReader();
             DataTable dt = new DataTable();
             dt.Load(dr);
@@ -105,7 +105,7 @@ namespace Coiffure
                 com.Parameters.AddWithValue("@prenom", txt_prenom.Text);
                 com.Parameters.AddWithValue("@email", txt_email.Text);
                 com.Parameters.AddWithValue("@password", txt_password.Text);
-                com.Parameters.AddWithValue("@ville", cb_ville.SelectedText);
+                com.Parameters.AddWithValue("@ville", cb_ville.SelectedIndex);
                 com.ExecuteNonQuery();
 
             }
@@ -141,6 +141,16 @@ namespace Coiffure
 
 
 
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cb_ville_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
