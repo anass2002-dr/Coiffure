@@ -38,6 +38,9 @@ namespace Coiffure
             txt_password.BackColor = this.BackColor;
             lk_incrire.BackColor = System.Drawing.Color.Transparent;
             lb_compte_non.BackColor = System.Drawing.Color.Transparent;
+            rb_client.BackColor = System.Drawing.Color.Transparent;
+            rb_coiffeur.BackColor = System.Drawing.Color.Transparent;
+
             //btn_conecter.ForeColor = Color.LightSeaGreen;
 
         }

@@ -77,7 +77,7 @@ namespace Coiffure
                 btn_modefier_sauvgarder.Text = "Sauvagarder";
                 btn_annule.Visible = true;
                 modefier = true;
-
+                lb_password.Text = "Nouveau pass :";
             }
             else
             {
@@ -91,11 +91,10 @@ namespace Coiffure
                     {
                         cn.Open();
                         SqlCommand com = new SqlCommand("update client set email=@email,nom=@nom,prenom=@prenom," +
-                            "password=@password,ville=@ville where id_client=" + Program.id, cn);
+                            "password=@password where id_client=" + Program.id, cn);
                         com.Parameters.AddWithValue("@email", txt_email.Text);
                         com.Parameters.AddWithValue("@nom", txt_nom.Text);
                         com.Parameters.AddWithValue("@prenom", txt_prenom.Text);
-                        com.Parameters.AddWithValue("@ville", txt_ville.Text);
                         com.Parameters.AddWithValue("@password", txt_password.Text);
 
                         com.ExecuteNonQuery();
@@ -108,11 +107,10 @@ namespace Coiffure
                     {
                         cn.Open();
                         SqlCommand com = new SqlCommand("update coiffeur set email=@email,nom=@nom,prenom=@prenom," +
-                            "password=@password,ville=@ville where id_coiffeur=" + Program.id, cn);
+                            "password=@password where id_coiffeur=" + Program.id, cn);
                         com.Parameters.AddWithValue("@email", txt_email.Text);
                         com.Parameters.AddWithValue("@nom", txt_nom.Text);
                         com.Parameters.AddWithValue("@prenom", txt_prenom.Text);
-                        com.Parameters.AddWithValue("@ville", txt_ville.Text);
                         com.Parameters.AddWithValue("@password", txt_password.Text);
                         com.ExecuteNonQuery();
                         MessageBox.Show("la modification est bien effectue");
@@ -128,6 +126,7 @@ namespace Coiffure
                 btn_modefier_sauvgarder.Text = "Modifier";
                 btn_annule.Visible = false;
                 modefier = false;
+                lb_password.Text = "Mot de passe :";
             }
         }
         public void active(bool a)
@@ -135,7 +134,6 @@ namespace Coiffure
             txt_email.Enabled = a;
             txt_nom.Enabled = a;
             txt_password.Enabled = a;
-            txt_ville.Enabled = a;
             txt_prenom.Enabled = a;
         }
         public bool vide()
@@ -154,6 +152,8 @@ namespace Coiffure
             btn_modefier_sauvgarder.Text = "Modifier";
             modefier = false;
             btn_annule.Visible = false;
+            lb_password.Text = "Mot de passe :";
+
             active(false);
         }
     }

@@ -73,14 +73,6 @@ namespace Coiffure
             // 
             this.cb_ville.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_ville.FormattingEnabled = true;
-            this.cb_ville.Items.AddRange(new object[] {
-            "Ouazzane",
-            "Tetouane",
-            "Tanger",
-            "Rabat",
-            "Casablanca",
-            "Fes",
-            "Agadir"});
             this.cb_ville.Location = new System.Drawing.Point(80, 30);
             this.cb_ville.Name = "cb_ville";
             this.cb_ville.Size = new System.Drawing.Size(126, 21);
@@ -102,11 +94,6 @@ namespace Coiffure
             this.cb_salon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cb_salon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_salon.FormattingEnabled = true;
-            this.cb_salon.Items.AddRange(new object[] {
-            "Salon milano",
-            "Salon picaso",
-            "Salon atlantico",
-            "Salon ouazzani"});
             this.cb_salon.Location = new System.Drawing.Point(355, 32);
             this.cb_salon.Name = "cb_salon";
             this.cb_salon.Size = new System.Drawing.Size(141, 21);
@@ -116,16 +103,6 @@ namespace Coiffure
             // 
             this.cb_temps.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_temps.FormattingEnabled = true;
-            this.cb_temps.Items.AddRange(new object[] {
-            "10:00 --> 11:00",
-            "11:00 --> 12:00",
-            "12:00 --> 13:00",
-            "13:00 --> 14:00",
-            "14:00 --> 15:00",
-            "17:00 --> 18:00",
-            "18:00 --> 19:00",
-            "19:00 --> 20:00",
-            "20:00 --> 21:00"});
             this.cb_temps.Location = new System.Drawing.Point(80, 63);
             this.cb_temps.Name = "cb_temps";
             this.cb_temps.Size = new System.Drawing.Size(126, 21);
@@ -421,17 +398,6 @@ namespace Coiffure
             this.cb_type_style.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cb_type_style.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_type_style.FormattingEnabled = true;
-            this.cb_type_style.Items.AddRange(new object[] {
-            "1. POMPADOUR TEXTURÉ + DÉGRADÉ BAS",
-            "2. QUIFF TEXTURÉ + DÉGRADÉ À BLANC",
-            "3. SIMPLE",
-            "4. COUPE AU BOL + DÉGRADÉ BAS",
-            "5. BUZZ CUT + CONTOURS",
-            "6. TRESSES ORIGINALES",
-            "7. COUPE CÉSAR + CHEVEUX ONDULÉS",
-            "8. BUZZ CUT + DÉGRADÉ À BLANC + BARBE BLANCHE DÉCONNECTÉE",
-            "9. QUIFF TEXTURÉ + DÉGRADÉ HAUT",
-            "10. SLICKED BACK + DÉGRADÉ HAUT"});
             this.cb_type_style.Location = new System.Drawing.Point(13, 37);
             this.cb_type_style.Name = "cb_type_style";
             this.cb_type_style.Size = new System.Drawing.Size(268, 21);

@@ -21,6 +21,8 @@ namespace Coiffure
         DataTable dt1 = new DataTable();
         DataTable dt2 = new DataTable();
         DataTable dt3 = new DataTable();
+        DataTable dt4 = new DataTable();
+
         private void Reserver_Load(object sender, EventArgs e)
         {
             panel_inside.BackColor = Color.FromArgb(100, 0, 0, 0);
@@ -54,9 +56,8 @@ namespace Coiffure
 
             //coiffure
             cn.Open();
-            SqlCommand com2 = new SqlCommand("select * from coiffure c inner join ville v on c.id_ville=v.id_ville inner join coiffeur" +
-                "cr on cr.id_coiffeur=c.id_coiffeur" + Program.id, cn);
-            SqlDataReader re2 = com.ExecuteReader();
+            SqlCommand com2 = new SqlCommand("select * from coiffure c inner join ville v on c.id_ville=v.id_ville inner join coiffeur cr on cr.id_coiffeur=c.id_coiffeur", cn);
+            SqlDataReader re2 = com2.ExecuteReader();
             dt2.Load(re2);
             cb_salon.DisplayMember = "salon";
             cb_salon.ValueMember = "id_coiffure";
@@ -65,16 +66,18 @@ namespace Coiffure
             cb_ville.DisplayMember = "ville";
             cb_ville.ValueMember = "id_coiffure";
             cb_ville.DataSource = dt2;
+            txt_nom_salon.DataBindings.Add("Text", dt2, "salon");
+            txt_nom_coiffeur.DataBindings.Add("Text", dt2, "nom");
 
             cn.Close();
             re2.Close();
 
             //style
             cn.Open();
-            SqlCommand com3 = new SqlCommand("select * from style_coiffure" + Program.id, cn);
-            SqlDataReader re3 = com.ExecuteReader();
+            SqlCommand com3 = new SqlCommand("select * from style", cn);
+            SqlDataReader re3 = com3.ExecuteReader();
             dt3.Load(re3);
-            cb_type_style.DisplayMember ="nom_style";
+            cb_type_style.DisplayMember = "nom_style";
             cb_type_style.ValueMember = "id_style";
             cb_type_style.DataSource = dt3;
 
@@ -85,6 +88,20 @@ namespace Coiffure
             txt_prix_total.DataBindings.Add("Text", dt3, "prix");
             cn.Close();
             re3.Close();
+            //calendrier
+            cn.Open();
+            SqlCommand com4 = new SqlCommand("select * from calendrier", cn);
+            SqlDataReader re4 = com4.ExecuteReader();
+            dt4.Load(re4);
+            cb_temps.DisplayMember = "temps";
+            cb_temps.ValueMember = "id_temps";
+            cb_temps.DataSource = dt4;
+
+            txt_temps.DataBindings.Add("Text", dt4, "temps");
+
+            cn.Close();
+            re4.Close();
+
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -94,10 +111,13 @@ namespace Coiffure
 
         private void cb_type_style_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             //string chemin = @"C:\Users\bismilah\Desktop\mini_projet\Coiffure\images\2.jpg";
-            //int indix = cb_type_style.SelectedIndex+1;
+            //string chemin = @"images/2.jpg";
             //pictureBox1.Image = Bitmap.FromFile(chemin);
-            //pictureBox1.ImageLocation = @"C:\Users\bismilah\Desktop\mini_projet\Coiffure\images\1.jpg";
+            //int indix = cb_type_style.SelectedIndex + 1;
+            //pictureBox1.Image = Bitmap.FromFile(chemin);
+            //pictureBox1.ImageLocation = @"C:\Users\bismilah\Desktop\mini_projet\coiffure\images\3.jpg";
         }
 
         private void btn_reserver_Click(object sender, EventArgs e)
